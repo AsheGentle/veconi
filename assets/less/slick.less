@@ -1,0 +1,145 @@
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    .display-flex();
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+}
+
+.slick-slide {
+    &.slick-loading img {
+        display: none;
+    }
+
+    display: none;
+
+    &.dragging img {
+        pointer-events: none;
+    }
+
+    .slick-initialized & {
+        display: block;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+}
+
+.slick-vertical {
+    .slick-track {
+        .column();
+    }
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.slick-arrow {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    z-index: 100;
+}
+
+.slick-prev {
+    background-image: url('../images/arrow-prev.svg');
+    left: -60px;
+}
+
+.slick-next {
+    background-image: url('../images/arrow-next.svg');
+    right: -60px;
+}
+
+.slick-dots {
+    font-size: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    li {
+        display: inline-block;
+        margin: 0 2px;
+    }
+
+    button {
+        background-color: fade(#fff, 50%);
+        border-radius: 100px;
+        border: none;
+        cursor: pointer;
+        display: block;
+        font-size: 0;
+        padding: 0;
+        height: 6px;
+        width: 6px;
+        .transition(background-color);
+    }
+
+    .slick-active button {
+        background-color: #fff;
+        width: 40px;
+    }
+}
+
+//отключить слайды, пока не инициализируется
+//.slider:not(.slick-initialized) .slide:not(:first-of-type) {display: none}
