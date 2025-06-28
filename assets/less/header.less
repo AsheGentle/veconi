@@ -192,14 +192,31 @@ header {
 }
 
 .header-buttons__cart {
+    .display-flex();
+    .align-items-center();
     color: @dark;
-    position: relative;
 
     svg {
+        .flex(0,0,auto);
         fill: currentColor;
         display: block;
         width: 20px;
         height: 20px;
+    }
+
+    .header-buttons__items {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 8px;
+        margin-left: 10px;
+
+        span {
+            display: block;
+
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+        }
     }
 }
 
@@ -212,6 +229,8 @@ header {
     border-left: 1px solid fade(@dark, 20%);
     margin-left: 10px;
     padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 
     svg {
         flex: 0 0 auto;

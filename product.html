@@ -372,7 +372,6 @@
                     </a>
                     <a href="" class="header-buttons__cart">
                         <svg aria-hidden="true"><use href="assets/images/icons.svg#cart" /></svg>
-                        <span class="header-buttons__value">1</span>
                     </a>
                     <a href="" class="header-buttons__login">
                         <svg aria-hidden="true"><use href="assets/images/icons.svg#login" /></svg>
@@ -495,30 +494,70 @@
                             <div class="item__more-count">2 товара</div>
                         </a>
                     </div>
-                    <div class="item__buy">
-                        <div class="item__buy-status pre">Доступно для предзаказа</div><!-- none / avail -->
-                        <div class="item__buy-inner">
-                            <div class="item__select">
-                                <div class="item__select-title">Размер, см</div>
-                                <select class="selectwrap__input selectbox">
-                                    <option selected>80x80x195</option>
-                                    <option>90x90x195</option>
-                                    <option>100x100x195</option>
-                                    <option class="none">110x110x195</option>
-                                    <option class="pre">120x120x195</option>
-                                </select>
-                            </div>
-                            <div class="item__price">35 101 ₽</div>
-                            <div class="item__buy-button">
-                                <a href="" class="btn">В корзину</a>
+                    <div class="item__wrap">
+                        <div class="item__buy">
+                            <div class="item__buy-status pre">Доступно для предзаказа</div><!-- none / avail -->
+                            <div class="item__buy-inner">
+                                <div class="item__select">
+                                    <div class="item__select-title">Размер, см</div>
+                                    <select class="selectwrap__input selectbox">
+                                        <option selected>80x80x195</option>
+                                        <option>90x90x195</option>
+                                        <option>100x100x195</option>
+                                        <option class="none">110x110x195</option>
+                                        <option class="pre">120x120x195</option>
+                                    </select>
+                                </div>
+                                <!--div class="item__price">35 101 ₽</div-->
+                                <div class="item__price">
+                                    <div class="item__price-partner">
+                                        <div class="item__price-title">Цена парнёра</div>
+                                        20 000 ₽
+                                    </div>
+                                    <div class="item__price-old">
+                                        <div class="item__price-title">Обычная цена</div>
+                                        42 950 ₽
+                                    </div>
+                                </div>
+                                <div class="item__buy-button">
+                                    <a href="" class="btn">В корзину</a>
+                                    <a href="" class="btn btn--partner">Показать цену Партнера</a>
+                                </div>
                             </div>
                         </div>
+                        <div class="item__availability">
+                            <div class="item__availability-title">В наличии</div>
+                            <div class="item__availability-list">
+                                <div class="item__availability-item">
+                                    <div class="item__availability-name">Название места</div>
+                                    <div class="item__availability-address" title="Москва, ул. такая-то, д. 01, кв. 01">Москва, ул. такая-то, д. 01, кв. 01</div>
+                                </div>
+                                <div class="item__availability-item">
+                                    <div class="item__availability-name">Название места</div>
+                                    <div class="item__availability-address" title="Москва, ул. такая-то очень длинная, д. 01, кв. 01">Москва, ул. такая-то очень длинная, д. 01, кв. 01</div>
+                                </div>
+                                <div class="item__availability-item">
+                                    <div class="item__availability-name">Название места</div>
+                                    <div class="item__availability-address" title="Москва, ул. такая-то, д. 01, кв. 01">Москва, ул. такая-то, д. 01, кв. 01</div>
+                                </div>
+                                <div class="item__availability-item">
+                                    <div class="item__availability-name">Название места</div>
+                                    <div class="item__availability-address" title="Москва, ул. такая-то, д. 01, кв. 01">Москва, ул. такая-то, д. 01, кв. 01</div>
+                                </div>
+                            </div>
+                            <button data-modal="#product-availability" type="button" class="item__availability-more">Все адреса</button>
+                        </div>
+                        <!--div class="item__availability">
+                            <div class="item__availability-none">Нет в наличии на складах</div>
+                        </div-->
                     </div>
                 </div>
                 <div class="item__description">
                     <div class="item__tabs">
                         <div class="item__tab" data-tab="description">Описание</div>
                         <div class="item__tab active" data-tab="characteristics">Характеристики</div>
+                        <div class="item__tab" data-tab="instructions">Инструкции</div>
+                        <div class="item__tab" data-tab="model">3D модель</div>
                     </div>
                     <div class="item__description-content" data-tab="description">
                         <p>Это текст-рыба. Текст-рыба просто плавает здесь, чтобы показать расположение текста относительно всего дизайна.</p>
@@ -602,6 +641,18 @@
                                 <div class="item__characteristics-value">1190-1215х790-815</div>
                             </div>
                         </div>
+                    </div>
+                    <div class="item__description-content" data-tab="instructions">
+                        <a href="" class="item__description-file">
+                           <svg aria-hidden="true"><use href="assets/images/icons.svg#download" /></svg>
+                           <span class="item__description-file-name">Название_файла.формат</span>
+                        </a>
+                    </div>
+                    <div class="item__description-content" data-tab="model">
+                        <a href="" class="item__description-file">
+                           <svg aria-hidden="true"><use href="assets/images/icons.svg#download" /></svg>
+                           <span class="item__description-file-name">Название_файла.формат</span>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -1033,6 +1084,70 @@
             <div class="panel__item">
                 <svg aria-hidden="true" class="panel__icon"><use href="assets/images/icons.svg#cart" /></svg>
                 <div class="panel__title">Корзина</div>
+            </div>
+        </div>
+
+        <div class="modal" id="product-availability">
+            <div class="modal__content">
+                <button type="button" class="modal__close">
+                    <svg aria-hidden="true"><use href="assets/images/icons.svg#close" /></svg>
+                    <span>Закрыть</span>
+                </button>
+                <div class="modal-availability">
+                    <div class="modal-availability__title">Душевой угол RV-03</div>
+                    <div class="modal-availability__article">RV03-10080A-01-19C1</div>
+                    <div class="modal-availability__count">Товар в наличии в <span>10</span> магазинах</div>
+                    <div class="modal-availability__list">
+                        <div class="modal-availability__item">
+                            <div class="modal-availability__item-name">Название места</div>
+                            <div class="modal-availability__item-address">Москва, ул. такая-то, д. 00, корп. 0</div>
+                        </div>
+                        <div class="modal-availability__item">
+                            <div class="modal-availability__item-name">Название места</div>
+                            <div class="modal-availability__item-address">Москва, ул. такая-то, д. 00, корп. 0</div>
+                        </div>
+                        <div class="modal-availability__item">
+                            <div class="modal-availability__item-name">Название места</div>
+                            <div class="modal-availability__item-address">Москва, ул. такая-то, д. 00, корп. 0</div>
+                        </div>
+                        <div class="modal-availability__item">
+                            <div class="modal-availability__item-name">Название места</div>
+                            <div class="modal-availability__item-address">Москва, ул. такая-то, д. 00, корп. 0</div>
+                        </div>
+                        <div class="modal-availability__item">
+                            <div class="modal-availability__item-name">Название места</div>
+                            <div class="modal-availability__item-address">Москва, ул. такая-то, д. 00, корп. 0</div>
+                        </div>
+                        <div class="modal-availability__item">
+                            <div class="modal-availability__item-name">Название места</div>
+                            <div class="modal-availability__item-address">Москва, ул. такая-то, д. 00, корп. 0</div>
+                        </div>
+                        <div class="modal-availability__item">
+                            <div class="modal-availability__item-name">Название места</div>
+                            <div class="modal-availability__item-address">Москва, ул. такая-то, д. 00, корп. 0</div>
+                        </div>
+                        <div class="modal-availability__item">
+                            <div class="modal-availability__item-name">Название места</div>
+                            <div class="modal-availability__item-address">Москва, ул. такая-то, д. 00, корп. 0</div>
+                        </div>
+                        <div class="modal-availability__item">
+                            <div class="modal-availability__item-name">Название места</div>
+                            <div class="modal-availability__item-address">Москва, ул. такая-то, д. 00, корп. 0</div>
+                        </div>
+                        <div class="modal-availability__item">
+                            <div class="modal-availability__item-name">Название места</div>
+                            <div class="modal-availability__item-address">Москва, ул. такая-то, д. 00, корп. 0</div>
+                        </div>
+                        <div class="modal-availability__item">
+                            <div class="modal-availability__item-name">Название места</div>
+                            <div class="modal-availability__item-address">Москва, ул. такая-то, д. 00, корп. 0</div>
+                        </div>
+                        <div class="modal-availability__item">
+                            <div class="modal-availability__item-name">Название места</div>
+                            <div class="modal-availability__item-address">Москва, ул. такая-то, д. 00, корп. 0</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

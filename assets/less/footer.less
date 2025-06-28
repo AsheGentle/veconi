@@ -89,12 +89,18 @@ footer {
     .column();
     .justify-content-center();
     .align-items-center();
+    cursor: pointer;
     color: fade(#000, 60%);
+    position: relative;
     text-align: center;
     width: 25%;
 
     &.active {
         color: #000;
+
+        .panel__value {
+            background-color: @dark;
+        }
     }
 }
 
@@ -108,4 +114,18 @@ footer {
     font-size: 13px;
     font-weight: 600;
     margin-top: 2px;
+}
+
+.panel__value {
+    background-color: #7A7A7A;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 12px;
+    left: 50%;
 }

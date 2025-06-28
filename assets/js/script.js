@@ -183,6 +183,7 @@ $(function() {
             slidesToShow: 3,
             slidesToScroll: 1,
             asNavFor: '.item__pictures',
+            arrows: false,
             dots: false,
             centerMode: false,
             focusOnSelect: true,
