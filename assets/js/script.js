@@ -171,34 +171,55 @@ $(function() {
 
 
     if ($(".item__pictures").length > 0) {
-        $('.item__pictures').slick({
+        let $mainSlider = $('.item__pictures').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
-            asNavFor: '.item__thumbnails',
             fade: true
         });
 
-        $('.item__thumbnails').slick({
+        let $thumbnails = $(".item__thumbnails").on("init", function(event, slick) {
+            $(slick.$slides[0]).addClass("active");
+        }).slick({
             slidesToShow: 3,
             slidesToScroll: 1,
-            asNavFor: '.item__pictures',
             arrows: false,
             dots: false,
             centerMode: false,
-            focusOnSelect: true,
+            focusOnSelect: false,
             vertical: true,
             infinite: false,
-            responsive: [
-                {
+            responsive: [{
                     breakpoint: 1301,
                     settings: {
-                        variableWidth: true,
-                        slidesToShow: 1,
                         vertical: false
                     }
-                }
-            ]
+                }]
+        });
+
+
+        $thumbnails.on('click', '.slick-slide', function(e) {
+            e.preventDefault();
+            let $slide = $(this);
+            let slideIndex = $slide.data('slick-index');
+            let currentPosition = $thumbnails.slick('slickCurrentSlide');
+            let totalSlides = $thumbnails.find('.slick-slide').not('.slick-cloned').length;
+            $thumbnails.find(".active").removeClass("active");
+            $slide.addClass("active");
+
+            let positionInViewport = slideIndex - currentPosition;
+
+            $mainSlider.slick('slickGoTo', slideIndex);
+
+            if (positionInViewport === 1) {
+                return;
+            } else if (positionInViewport === 0 && currentPosition > 0) {
+                $thumbnails.slick('slickGoTo', currentPosition - 1);
+            } else if (positionInViewport === 2 && currentPosition < totalSlides - 3) {
+                $thumbnails.slick('slickGoTo', currentPosition + 1);
+            } else {
+                $thumbnails.slick('slickGoTo', slideIndex);
+            }
         });
     }
 });

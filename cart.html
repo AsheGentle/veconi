@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Главная</title>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <script src="assets/js/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <header>
+            <div class="header-top">
+                <div class="header-contacts">
+                    <div class="header-contacts__address">
+                        <svg aria-hidden="true"><use href="assets/images/icons.svg#address" /></svg>
+                        Москва
+                    </div>
+                    <a href="tel:+78002014050" class="header-contacts__phone">+7 (800) 201-40-50</a>
+                    <a href="mailto:info@veconi.ru" class="header-contacts__mail">info@veconi.ru</a>
+                    <a href="" class="header-contacts__times">с 9:00 до 18:00 Пн-Пт</a>
+                </div>
+                <div class="header-links">
+                    <ul class="header-nav">
+                        <li class="header-nav__item"><a href="">Контакты</a></li>
+                        <li class="header-nav__item"><a href="">Доставка</a></li>
+                        <li class="header-nav__item"><a href="">Оплата</a></li>
+                    </ul>
+                    <div class="socials">
+                        <a href="" target="_blank" class="socials__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="15" fill="none" viewBox="0 0 10 15"><path fill="#fff" d="M2.844 8.769V15h3.398V8.769h2.534l.528-2.866H6.242V4.89c0-1.515.595-2.095 2.13-2.095.478 0 .861.012 1.084.035V.231C9.037.117 8.012 0 7.42 0 4.288 0 2.844 1.48 2.844 4.67v1.233H.91V8.77h1.934Z"/></svg>
+                        </a>
+                        <a href="" target="_blank" class="socials__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" fill="none" viewBox="0 0 14 15"><path fill="#fff" d="M7.44 4.13a3.36 3.36 0 0 0-3.366 3.367 3.36 3.36 0 0 0 3.366 3.366 3.36 3.36 0 0 0 3.367-3.366A3.36 3.36 0 0 0 7.44 4.131Zm0 5.556a2.192 2.192 0 0 1-2.188-2.189A2.19 2.19 0 0 1 7.44 5.31 2.19 2.19 0 0 1 9.63 7.497 2.192 2.192 0 0 1 7.44 9.686Zm4.29-5.693a.783.783 0 0 1-.786.785.785.785 0 1 1 .785-.785Zm2.229.797c-.05-1.052-.29-1.983-1.06-2.75-.768-.769-1.7-1.009-2.751-1.061C9.063.917 5.814.917 4.73.979c-1.048.05-1.98.29-2.75 1.057-.771.768-1.008 1.7-1.061 2.751-.062 1.084-.062 4.333 0 5.417.05 1.052.29 1.983 1.06 2.751.771.768 1.7 1.008 2.751 1.06 1.084.062 4.333.062 5.418 0 1.051-.05 1.983-.29 2.75-1.06.768-.768 1.008-1.7 1.061-2.75.062-1.085.062-4.331 0-5.415Zm-1.4 6.577a2.215 2.215 0 0 1-1.248 1.248c-.865.343-2.915.264-3.87.264-.956 0-3.01.076-3.87-.264a2.216 2.216 0 0 1-1.249-1.248c-.343-.864-.263-2.915-.263-3.87 0-.955-.077-3.009.263-3.87A2.216 2.216 0 0 1 3.57 2.379c.865-.343 2.915-.264 3.87-.264.956 0 3.01-.076 3.87.264.575.228 1.017.67 1.249 1.248.342.864.263 2.915.263 3.87 0 .955.08 3.009-.263 3.87Z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <button type="button" class="header-toggle">
+                    <svg role="img" aria-label="Меню"><use href="assets/images/icons.svg#menu" /></svg>
+                </button>
+                <a href="/" class="logo"><img src="assets/images/logo.png" alt=""></a>
+                <nav class="menu">
+                    <div class="menu-tabs">
+                        <div class="menu-tab active" data-menu="catalog">Каталог</div>
+                        <div class="menu-tab" data-menu="menu">Меню</div>
+                    </div>
+                    <div class="menu__list">
+                        <div class="menu__item has-submenu">
+                            <a class="menu__link menu__catalog">
+                                <svg aria-hidden="true"><use href="assets/images/icons.svg#menu" /></svg>
+                                <span>Каталог</span>
+                            </a>
+                            <div class="submenu">
+                                <div class="submenu__container">
+                                    <ul class="submenu__list">
+                                        <li class="submenu__item has-child">
+                                            <a class="submenu__link" href="">
+                                                Душевые уголки
+                                            </a>
+                                            <img src="assets/images/content/menu-1.png" alt="" class="submenu__image">
+                                            <div class="childmenu">
+                                                <div class="childmenu__wrap">
+                                                    <div class="childmenu__title">Душевые уголки</div>
+                                                    <div class="childmenu__content">
+                                                        <div class="childmenu__column">
+                                                            <div class="childmenu__column-title">По размеру</div>
+                                                            <ul class="childmenu__list">
+                                                                <li><a href="">70x70</a></li>
+                                                                <li><a href="">80x80</a></li>
+                                                                <li><a href="">90x90</a></li>
+                                                                <li><a href="">100x80</a></li>
+                                                                <li><a href="">100x100</a></li>
+                                                                <li><a href="">110x80</a></li>
+                                                                <li><a href="">120x80</a></li>
+                                                                <li><a href="">120x90</a></li>
+                                                                <li><a href="">120x120</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="childmenu__column">
+                                                            <div class="childmenu__column-title">По типу</div>
+                                                            <ul class="childmenu__list">
+                                                                <li><a href="">С поддонами</a></li>
+                                                                <li><a href="">Без поддона</a></li>
+                                                                <li><a href="">С высоким поддоном</a></li>
+                                                                <li><a href="">С низким поддоном</a></li>
+                                                                <li><a href="">Стеклянные</a></li>
+                                                                <li><a href="">Асимметричные</a></li>
+                                                                <li><a href="">Квадратные</a></li>
+                                                                <li><a href="">Полукруглые</a></li>
+                                                                <li><a href="">Прямоугольные</a></li>
+                                                                <li><a href="">Пятиугольные</a></li>
+                                                                <li class="accent"><a href="">Premium</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <a href="" class="childmenu__all">Все товары</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="submenu__item has-child">
+                                            <a class="submenu__link" href="">Душевые перегородки</a>
+                                            <img src="assets/images/content/menu-2.png" alt="" class="submenu__image">
+                                            <div class="childmenu">
+                                                <div class="childmenu__wrap">
+                                                    <div class="childmenu__title">Душевые перегородки</div>
+                                                    <div class="childmenu__content">
+                                                        <ul class="childmenu__list">
+                                                            <li>
+                                                                <a href="">Матовые</a>
+                                                                <img src="https://dummyimage.com/1000x1000/000/fff.jpg&text=Матовые" alt="" class="childmenu__image">
+                                                            </li>
+                                                            <li>
+                                                                <a href="">Стеклянные</a>
+                                                                <img src="https://dummyimage.com/1000x1000/000/fff.jpg&text=Стеклянные" alt="" class="childmenu__image">
+                                                            </li>
+                                                            <li>
+                                                                <a href="">С дверьми</a>
+                                                                <img src="https://dummyimage.com/1000x1000/000/fff.jpg&text=С дверьми" alt="" class="childmenu__image">
+                                                            </li>
+                                                            <li>
+                                                                <a href="">Раздвижные</a>
+                                                                <img src="https://dummyimage.com/1000x1000/000/fff.jpg&text=Раздвижные" alt="" class="childmenu__image">
+                                                            </li>
+                                                            <li>
+                                                                <a href="">Прямоугольные</a>
+                                                                <img src="https://dummyimage.com/1000x1000/000/fff.jpg&text=Прямоугольные" alt="" class="childmenu__image">
+                                                            </li>
+                                                            <li>
+                                                                <a href="">Korato</a>
+                                                                <img src="https://dummyimage.com/1000x1000/000/fff.jpg&text=Korato" alt="" class="childmenu__image">
+                                                            </li>
+                                                            <li class="accent">
+                                                                <a href="">Premium</a>
+                                                                <img src="https://dummyimage.com/1000x1000/000/fff.jpg&text=Premium" alt="" class="childmenu__image">
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <a href="" class="childmenu__all">Все товары</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="submenu__item has-child">
+                                            <a class="submenu__link" href="">Душевые двери</a>
+                                            <img src="assets/images/content/menu-3.png" alt="" class="submenu__image">
+                                            <div class="childmenu">
+                                                <div class="childmenu__wrap">
+                                                    <div class="childmenu__title">Душевые двери</div>
+                                                    <div class="childmenu__content">
+                                                        <ul class="childmenu__list">
+                                                            <li><a href="">Раскладные</a></li>
+                                                            <li><a href="">Распашные</a></li>
+                                                            <li><a href="">Складные</a></li>
+                                                            <li class="accent"><a href="">Premium</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <a href="" class="childmenu__all">Все товары</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="submenu__item has-child">
+                                            <a class="submenu__link" href="">Душевые поддоны</a>
+                                            <img src="assets/images/content/menu-4.png" alt="" class="submenu__image">
+                                            <div class="childmenu">
+                                                <div class="childmenu__wrap">
+                                                    <div class="childmenu__title">Душевые поддоны</div>
+                                                    <div class="childmenu__content">
+                                                        <ul class="childmenu__list">
+                                                            <li><a href="">Керамические</a></li>
+                                                            <li><a href="">Акриловые</a></li>
+                                                            <li><a href="">Из искусственного камня</a></li>
+                                                            <li><a href="">Стальные</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <a href="" class="childmenu__all">Все товары</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="submenu__item has-child">
+                                            <a class="submenu__link" href="">Ванны</a>
+                                            <img src="assets/images/content/menu-5.png" alt="" class="submenu__image">
+                                            <div class="childmenu">
+                                                <div class="childmenu__wrap">
+                                                    <div class="childmenu__title">Ванны</div>
+                                                    <div class="childmenu__content">
+                                                        <ul class="childmenu__list">
+                                                            <li><a href="">Из искусственного камня</a></li>
+                                                            <li class="accent"><a href="">Premium</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <a href="" class="childmenu__all">Все товары</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="submenu__item has-child">
+                                            <a class="submenu__link" href="">Унитазы</a>
+                                            <img src="assets/images/content/menu-6.png" alt="" class="submenu__image">
+                                            <div class="childmenu">
+                                                <div class="childmenu__wrap">
+                                                    <div class="childmenu__title">Унитазы</div>
+                                                    <div class="childmenu__content">
+                                                        <div class="childmenu__column">
+                                                            <div class="childmenu__column-title">По типу монтажа</div>
+                                                            <ul class="childmenu__list">
+                                                                <li><a href="">Напольные</a></li>
+                                                                <li><a href="">Подвесные</a></li>
+                                                                <li><a href="">С инсталляцией</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="childmenu__column">
+                                                            <div class="childmenu__column-title">По типу</div>
+                                                            <ul class="childmenu__list">
+                                                                <li><a href="">Безободковые</a></li>
+                                                                <li><a href="">С горизонтальным выпуском</a></li>
+                                                                <li><a href="">С вертикальным выпуском</a></li>
+                                                                <li><a href="">С микролифтом</a></li>
+                                                                <li><a href="">Биде</a></li>
+                                                                <li><a href="">Писсуары</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <a href="" class="childmenu__all">Все товары</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="submenu__item has-child">
+                                            <a class="submenu__link" href="">Аксессуары для ванной</a>
+                                            <img src="assets/images/content/menu-7.png" alt="" class="submenu__image">
+                                            <div class="childmenu">
+                                                <div class="childmenu__wrap">
+                                                    <div class="childmenu__content">
+                                                        <div class="childmenu__column">
+                                                            <div class="childmenu__title">Аксессуары для ванной</div>
+                                                            <ul class="childmenu__list">
+                                                                <li><a href="">Стулья для душа</a></li>
+                                                                <li><a href="">Экраны под ванну</a></li>
+                                                                <li><a href="">Сушилки для тела</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="childmenu__column">
+                                                            <div class="childmenu__title">Шторки для ванной</div>
+                                                            <ul class="childmenu__list">
+                                                                <li><a href="">Неподвижные</a></li>
+                                                                <li><a href="">Распашные</a></li>
+                                                                <li><a href="">Складные</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="childmenu__column">
+                                                            <div class="childmenu__title">Средства для ухода за стеклом</div>
+                                                            <ul class="childmenu__list">
+                                                                <li><a href="">Easy clean</a></li>
+                                                                <li><a href="">Скребки для стекол</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <a href="" class="childmenu__all">Все товары</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="submenu__item has-child">
+                                            <a class="submenu__link" href="">Комплектующие для ванной</a>
+                                            <img src="assets/images/content/menu-8.png" alt="" class="submenu__image">
+                                            <div class="childmenu">
+                                                <div class="childmenu__wrap">
+                                                    <div class="childmenu__content">
+                                                        <div class="childmenu__column">
+                                                            <div class="childmenu__title">Комплектующие для ванной</div>
+                                                            <ul class="childmenu__list">
+                                                                <li><a href="">Ножки для ванн</a></li>
+                                                                <li><a href="">Инсталляции</a></li>
+                                                                <li><a href="">Кнопки</a></li>
+                                                                <li><a href="">Доборные профили</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="childmenu__column">
+                                                            <div class="childmenu__title">Душевые лотки</div>
+                                                            <ul class="childmenu__list">
+                                                                <li><a href="">Матовые</a></li>
+                                                                <li><a href="">Угловые</a></li>
+                                                                <li><a href="">С гидрозатвором</a></li>
+                                                                <li><a href="">С сухим затвором</a></li>
+                                                                <li><a href="">С вертикальным отводом</a></li>
+                                                                <li><a href="">С горизонтальным выпуском</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="childmenu__column">
+                                                            <div class="childmenu__title">Сифоны</div>
+                                                            <ul class="childmenu__list">
+                                                                <li><a href="">Для поддонов</a></li>
+                                                                <li><a href="">Для раковин</a></li>
+                                                                <li><a href="">Для биде</a></li>
+                                                                <li><a href="">Для писсуаров</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <a href="" class="childmenu__all">Все товары</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="submenu__item has-child">
+                                            <a class="submenu__link" href="">Полотенцесушители</a>
+                                            <img src="assets/images/content/menu-9.png" alt="" class="submenu__image">
+                                            <div class="childmenu">
+                                                <div class="childmenu__wrap">
+                                                    <div class="childmenu__title">Полотенцесушители</div>
+                                                    <div class="childmenu__content">
+                                                        <div class="childmenu__column">
+                                                            <div class="childmenu__column-title">По типу</div>
+                                                            <ul class="childmenu__list">
+                                                                <li><a href="">Водяные</a></li>
+                                                                <li><a href="">Электрические</a></li>
+                                                                <li><a href="">С терморегулятором</a></li>
+                                                                <li><a href="">Из нержавейки</a></li>
+                                                                <li><a href="">Хромированные</a></li>
+                                                                <li><a href="">Поворотные</a></li>
+                                                                <li><a href="">Бесшовные</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="childmenu__column">
+                                                            <div class="childmenu__column-title">По форме</div>
+                                                            <ul class="childmenu__list">
+                                                                <li><a href="">М-образные</a></li>
+                                                                <li><a href="">П-образные</a></li>
+                                                                <li><a href="">Боковые</a></li>
+                                                                <li><a href="">С полкой</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <a href="" class="childmenu__all">Все товары</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="submenu__item accent"><a class="submenu__link" href="">Premium</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="menu__items">
+                            <li class="menu__item"><a class="menu__link">Новинки</a></li>
+                            <li class="menu__item"><a class="menu__link">Где купить</a></li>
+                            <li class="menu__item"><a class="menu__link">Новости</a></li>
+                            <li class="menu__item"><a class="menu__link">Сервис</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="header-buttons">
+                    <div class="search">
+                        <button type="button" class="search__toggle">
+                            <svg aria-hidden="true"><use href="assets/images/icons.svg#search" /></svg>
+                        </button>
+                        <div class="search__wrap">
+                            <form class="search__form">
+                                <input type="search" class="search__input" placeholder="Набирайте здесь...">
+                                <button type="button" class="search__close">
+                                    <svg aria-hidden="true"><use href="assets/images/icons.svg#close" /></svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <a href="" class="header-buttons__favorite">
+                        <svg aria-hidden="true"><use href="assets/images/icons.svg#favorite" /></svg>
+                        <span class="header-buttons__value">1</span>
+                    </a>
+                    <a href="" class="header-buttons__cart">
+                        <svg aria-hidden="true"><use href="assets/images/icons.svg#cart" /></svg>
+                        <span class="header-buttons__items">
+                            <span>3 товара</span>
+                            <span>140 404 ₽</span>
+                        </span>
+                    </a>
+                    <a href="" class="header-buttons__login">
+                        <svg aria-hidden="true"><use href="assets/images/icons.svg#login" /></svg>
+                        <span>Войти</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="showcase">
+                <div class="showcase-slider">
+                    <div class="showcase-slider__item">
+                        <div class="showcase-slider__inner">
+                            <picture class="showcase-slider__image">
+                                <source srcset="assets/images/content/showcase-1m.png" type="image/png" media="(max-width: 700px)">
+                                <source srcset="assets/images/content/showcase-1.png" type="image/png">
+                                <img src="assets/images/content/showcase-1.png" alt="">
+                            </picture>
+                            <div class="showcase-slider__description">
+                                <div class="showcase-slider__title">Заголовок</div>
+                                <div class="showcase-slider__text">Это текст-рыба. Текст-рыба просто плавает здесь, чтобы показать расположение текста относительно всего дизайна.</div>
+                                <div class="showcase-slider__button">
+                                    <a href="" class="btn">Название кнопки</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-slider__item">
+                        <div class="showcase-slider__inner">
+                            <picture class="showcase-slider__image">
+                                <source srcset="assets/images/content/showcase-1m.png" type="image/png" media="(max-width: 500px)">
+                                <source srcset="assets/images/content/showcase-1.png" type="image/png">
+                                <img src="assets/images/content/showcase-1.png" alt="">
+                            </picture>
+                            <div class="showcase-slider__description">
+                                <div class="showcase-slider__title">Заголовок</div>
+                                <div class="showcase-slider__text">Это текст-рыба. Текст-рыба просто плавает здесь, чтобы показать расположение текста относительно всего дизайна.</div>
+                                <div class="showcase-slider__button">
+                                    <a href="" class="btn">Название кнопки</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="categories">
+                <div class="categories-list">
+                    <a href="" class="category">
+                        <img src="assets/images/content/cat-1.png" alt="" class="category__image">
+                        <div class="category__name">Душевые<br>
+                            перегородки</div>
+                    </a>
+                    <a href="" class="category">
+                        <img src="assets/images/content/cat-2.png" alt="" class="category__image">
+                        <div class="category__name">Поддоны<br>
+                            для душа</div>
+                    </a>
+                    <a href="" class="category">
+                        <img src="assets/images/content/cat-3.png" alt="" class="category__image">
+                        <div class="category__name">Ванны</div>
+                    </a>
+                    <a href="" class="category">
+                        <img src="assets/images/content/cat-4.png" alt="" class="category__image">
+                        <div class="category__name">Унитазы</div>
+                    </a>
+                    <a href="" class="category">
+                        <img src="assets/images/content/cat-5.png" alt="" class="category__image">
+                        <div class="category__name">Водоотводящие<br>
+                            системы</div>
+                    </a>
+                    <a href="" class="category">
+                        <img src="assets/images/content/cat-6.png" alt="" class="category__image">
+                        <div class="category__name">Инсталляции<br>
+                            и кнопки</div>
+                    </a>
+                    <a href="" class="category category--all">
+                        <div class="category__name">Смотреть <br>все</div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="section-catalog">
+                <div class="title">
+                    <h2>Топ продаж</h2>
+                    <a href="" class="title__link">Смотреть все</a>
+                </div>
+                <div class="catalog-slider">
+                    <div class="product">
+                        <div class="product__inner">
+                            <a href="" class="product__image">
+                                <img src="assets/images/content/product-1.png" alt="">
+                                <div class="product__label">Выставлен в шоурум</div>
+                                <button type="button" class="product__favorite">
+                                    <svg role="img" aria-label="В избранное"><use href="assets/images/icons.svg#favorite" /></svg>
+                                </button>
+                                <div class="product__tags">
+                                    <div class="product__tag premium">Premuim</div>
+                                    <div class="product__tag new">New</div>
+                                    <div class="product__tag hit">Hit</div>
+                                    <div class="product__tag percent">-5<span class="percent__sign"></span></div>
+                                </div>
+                            </a>
+                            <div class="product__description">
+                                <div class="product__title">
+                                    <a href="" class="product__name">Душевой угол RV-13</a>
+                                    <div class="product__price">
+                                        <span class="price-old">30 379 ₽</span> 17 140 ₽
+                                    </div>
+                                </div>
+                                <div class="product__bottom">
+                                    <div class="selectwrap">
+                                        <div class="selectwrap__title">Параметры</div>
+                                        <select class="selectwrap__input selectbox">
+                                            <option>80x80x195</option>
+                                            <option>90x90x195</option>
+                                            <option>100x100x195</option>
+                                            <option disabled>110x110x195</option>
+                                            <option disabled>120x120x195</option>
+                                        </select>
+                                    </div>
+                                    <div class="product__buttons">
+                                        <button type="button" class="btn-icon" data-modal="#product-view">
+                                            <svg role="img" aria-label="Быстрый просмотр"><use href="assets/images/icons.svg#eye" /></svg>
+                                        </button>
+                                        <button type="button" class="btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__inner">
+                            <a href="" class="product__image">
+                                <img src="assets/images/content/product-1.png" alt="">
+                                <div class="product__label">Выставлен в шоурум</div>
+                                <button type="button" class="product__favorite">
+                                    <svg role="img" aria-label="В избранное"><use href="assets/images/icons.svg#favorite" /></svg>
+                                </button>
+                                <div class="product__tags">
+                                    <div class="product__tag premium">Premuim</div>
+                                    <div class="product__tag new">New</div>
+                                    <div class="product__tag hit">Hit</div>
+                                    <div class="product__tag percent">-5<span class="percent__sign"></span></div>
+                                </div>
+                            </a>
+                            <div class="product__description">
+                                <div class="product__title">
+                                    <a href="" class="product__name">Душевой угол RV-36</a>
+                                    <div class="product__price">
+                                        <span class="price-old">30 379 ₽</span> 17 140 ₽
+                                    </div>
+                                </div>
+                                <div class="product__bottom">
+                                    <div class="selectwrap">
+                                        <div class="selectwrap__title">Параметры</div>
+                                        <select class="selectwrap__input selectbox">
+                                            <option>80x80x195</option>
+                                            <option>90x90x195</option>
+                                            <option>100x100x195</option>
+                                            <option disabled>110x110x195</option>
+                                            <option disabled>120x120x195</option>
+                                        </select>
+                                    </div>
+                                    <div class="product__buttons">
+                                        <button type="button" class="btn-icon">
+                                            <svg role="img" aria-label="Быстрый просмотр"><use href="assets/images/icons.svg#eye" /></svg>
+                                        </button>
+                                        <button type="button" class="btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__inner">
+                            <a href="" class="product__image">
+                                <img src="assets/images/content/product-1.png" alt="">
+                                <div class="product__label">Выставлен в шоурум</div>
+                                <button type="button" class="product__favorite">
+                                    <svg role="img" aria-label="В избранное"><use href="assets/images/icons.svg#favorite" /></svg>
+                                </button>
+                                <div class="product__tags">
+                                    <div class="product__tag premium">Premuim</div>
+                                    <div class="product__tag new">New</div>
+                                    <div class="product__tag hit">Hit</div>
+                                    <div class="product__tag percent">-5<span class="percent__sign"></span></div>
+                                </div>
+                            </a>
+                            <div class="product__description">
+                                <div class="product__title">
+                                    <a href="" class="product__name">Душевая дверь VN-70</a>
+                                    <div class="product__price">
+                                        <span class="price-old">30 379 ₽</span> 17 140 ₽
+                                    </div>
+                                </div>
+                                <div class="product__bottom">
+                                    <div class="selectwrap">
+                                        <div class="selectwrap__title">Параметры</div>
+                                        <select class="selectwrap__input selectbox">
+                                            <option>80x80x195</option>
+                                            <option>90x90x195</option>
+                                            <option>100x100x195</option>
+                                            <option disabled>110x110x195</option>
+                                            <option disabled>120x120x195</option>
+                                        </select>
+                                    </div>
+                                    <div class="product__buttons">
+                                        <button type="button" class="btn-icon">
+                                            <svg role="img" aria-label="Быстрый просмотр"><use href="assets/images/icons.svg#eye" /></svg>
+                                        </button>
+                                        <button type="button" class="btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__inner">
+                            <a href="" class="product__image">
+                                <img src="assets/images/content/product-1.png" alt="">
+                                <div class="product__label">Выставлен в шоурум</div>
+                                <button type="button" class="product__favorite">
+                                    <svg role="img" aria-label="В избранное"><use href="assets/images/icons.svg#favorite" /></svg>
+                                </button>
+                                <div class="product__tags">
+                                    <div class="product__tag premium">Premuim</div>
+                                    <div class="product__tag new">New</div>
+                                    <div class="product__tag hit">Hit</div>
+                                    <div class="product__tag percent">-5<span class="percent__sign"></span></div>
+                                </div>
+                            </a>
+                            <div class="product__description">
+                                <div class="product__title">
+                                    <a href="" class="product__name">Унитаз подвесной Veconi Pulito Rimless VCN2-49R</a>
+                                    <div class="product__price">
+                                        <span class="price-old">30 379 ₽</span> 17 140 ₽
+                                    </div>
+                                </div>
+                                <div class="product__bottom">
+                                    <div class="product__buttons">
+                                        <button type="button" class="btn-icon">
+                                            <svg role="img" aria-label="Быстрый просмотр"><use href="assets/images/icons.svg#eye" /></svg>
+                                        </button>
+                                        <button type="button" class="btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main-about">
+                <div class="main-about__image">
+                    <img src="assets/images/content/about.png" alt="">
+                </div>
+                <div class="main-about__description">
+                    <h2>Veconi</h2>
+                    <div class="main-about__text">
+                        Лаконичный итальянский дизайн, который впишется в любой стиль ванной комнаты. Вся продукция производится на современном итальянском оборудовании, в отделке используется только европейская фурнитура, а основой служат безопасные закаленные стёкла.
+                    </div>
+                    <div class="main-about__subtitle">Мы — лучший выбор</div>
+                    <div class="main-about__list">
+                        <div class="main-about__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="19" fill="none" viewBox="0 0 23 19"><path fill="#fff" d="M1.688.5C.755.5 0 1.256 0 2.188v11.25c0 .931.756 1.687 1.688 1.687h.562a3.376 3.376 0 0 0 6.75 0h4.5a3.376 3.376 0 0 0 6.75 0h1.125c.622 0 1.125-.503 1.125-1.125s-.503-1.125-1.125-1.125V8.843a2.25 2.25 0 0 0-.657-1.593L18 4.532a2.25 2.25 0 0 0-1.593-.657h-1.782V2.187c0-.931-.756-1.687-1.688-1.687H1.688Zm12.937 5.625h1.782l2.718 2.718V9.5h-4.5V6.125Zm-10.688 9a1.687 1.687 0 1 1 3.375 0 1.687 1.687 0 0 1-3.375 0Zm12.938-1.688a1.687 1.687 0 1 1 0 3.375 1.687 1.687 0 0 1 0-3.375Z"/></svg>
+                            <span>Бесплатная доставка</span>
+                        </div>
+                        <div class="main-about__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" fill="none" viewBox="0 0 22 23"><path fill="#fff" d="M11 .5c.198 0 .395.043.576.125l8.09 3.433c.946.4 1.65 1.332 1.646 2.458-.021 4.262-1.774 12.061-9.178 15.606a2.625 2.625 0 0 1-2.268 0C2.462 18.577.709 10.778.688 6.516c-.005-1.126.7-2.059 1.645-2.458L10.428.625C10.605.543 10.803.5 11 .5Z"/></svg>
+                            <span>Гарантия на продукцию 2 года</span>
+                        </div>
+                        <div class="main-about__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="19" fill="none" viewBox="0 0 23 19"><path fill="#fff" d="M16.875 2.188c0-.932-.756-1.688-1.688-1.688h-3.374c-.932 0-1.688.756-1.688 1.688v1.687h-2.25V1.344A.842.842 0 0 0 7.031.5a.842.842 0 0 0-.843.844v2.531h-2.25V1.344A.842.842 0 0 0 3.094.5a.842.842 0 0 0-.844.844v2.531h-.563C.756 3.875 0 4.631 0 5.563V16.811c0 .932.756 1.688 1.688 1.688h19.124c.932 0 1.688-.756 1.688-1.688V8.938c0-.931-.756-1.687-1.688-1.687h-3.937V2.187Zm3.375 11.25v1.124c0 .31-.253.563-.563.563h-1.125a.564.564 0 0 1-.562-.563v-1.124c0-.31.253-.563.563-.563h1.125c.309 0 .562.253.562.563ZM8.437 15.124H7.313a.564.564 0 0 1-.563-.563v-1.124c0-.31.253-.563.563-.563h1.125c.309 0 .562.253.562.563v1.124c0 .31-.253.563-.563.563ZM4.5 14.562c0 .31-.253.563-.563.563H2.813a.564.564 0 0 1-.563-.563v-1.124c0-.31.253-.563.563-.563h1.124c.31 0 .563.253.563.563v1.124ZM19.688 9.5c.309 0 .562.253.562.563v1.124c0 .31-.253.563-.563.563h-1.125a.564.564 0 0 1-.562-.563v-1.124c0-.31.253-.563.563-.563h1.125ZM9 6.687v1.125c0 .31-.253.563-.563.563H7.313a.564.564 0 0 1-.563-.563V6.688c0-.309.253-.562.563-.562h1.125c.309 0 .562.253.562.563Zm-5.063-.562c.31 0 .563.253.563.563v1.125c0 .309-.253.562-.563.562H2.813a.564.564 0 0 1-.563-.563V6.688c0-.309.253-.562.563-.562h1.124ZM9 11.188c0 .309-.253.562-.563.562H7.313a.564.564 0 0 1-.563-.563v-1.124c0-.31.253-.563.563-.563h1.125c.309 0 .562.253.562.563v1.124Zm-5.063.562H2.813a.564.564 0 0 1-.563-.563v-1.124c0-.31.253-.563.563-.563h1.124c.31 0 .563.253.563.563v1.124c0 .31-.253.563-.563.563Zm10.688-1.688v1.126c0 .309-.253.562-.563.562h-1.124a.564.564 0 0 1-.563-.563v-1.124c0-.31.253-.563.563-.563h1.124c.31 0 .563.253.563.563Zm-.563-7.312c.31 0 .563.253.563.563v1.124c0 .31-.253.563-.563.563h-1.124a.564.564 0 0 1-.563-.563V3.313c0-.309.253-.562.563-.562h1.124Zm.563 3.938v1.125c0 .309-.253.562-.563.562h-1.124a.564.564 0 0 1-.563-.563V6.688c0-.309.253-.562.563-.562h1.124c.31 0 .563.253.563.563Z"/></svg>
+                            <span>Самый большой шоурум</span>
+                        </div>
+                        <div class="main-about__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" fill="none" viewBox="0 0 22 23"><path fill="#fff" d="M3.377.715A1.03 1.03 0 0 0 2.02.8L.3 2.52a1.035 1.035 0 0 0-.09 1.357l3.438 4.47c.193.253.498.403.816.403H6.79l4.684 4.684a3.319 3.319 0 0 0 .614 3.85l4.813 4.812c.537.537 1.409.537 1.946 0l2.75-2.75a1.377 1.377 0 0 0 0-1.946l-4.812-4.813a3.326 3.326 0 0 0-3.85-.614L8.25 7.289V4.964c0-.322-.15-.623-.404-.816L3.377.715ZM.855 17.52a2.918 2.918 0 1 0 4.125 4.125l5.062-5.062a4.714 4.714 0 0 1-.155-2.797l-2.651-2.651-6.38 6.385ZM22 6.688c0-.452-.047-.89-.137-1.311-.104-.481-.692-.606-1.04-.258l-2.746 2.746a.69.69 0 0 1-.486.202l-2.466-.004a.69.69 0 0 1-.688-.688V4.909a.69.69 0 0 1 .203-.486l2.745-2.746c.348-.348.224-.936-.258-1.04A6.319 6.319 0 0 0 15.813.5a6.19 6.19 0 0 0-6.188 6.188v.034l3.665 3.665a4.69 4.69 0 0 1 4.469 1.233l.675.675A6.195 6.195 0 0 0 22 6.688ZM2.406 19.063a1.031 1.031 0 1 1 2.063 0 1.031 1.031 0 0 1-2.063 0Z"/></svg>
+                            <span>Сервисная служба</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-catalog">
+                <div class="title">
+                    <h2>Новинки</h2>
+                    <a href="" class="title__link">Смотреть все</a>
+                </div>
+                <div class="catalog-slider">
+                    <div class="product">
+                        <div class="product__inner">
+                            <a href="" class="product__image">
+                                <img src="assets/images/content/product-1.png" alt="">
+                                <button type="button" class="product__favorite">
+                                    <svg role="img" aria-label="В избранное"><use href="assets/images/icons.svg#favorite" /></svg>
+                                </button>
+                                <div class="product__tags">
+                                    <div class="product__tag new">New</div>
+                                </div>
+                            </a>
+                            <div class="product__description">
+                                <div class="product__title">
+                                    <a href="" class="product__name">Душевой угол RV-13</a>
+                                    <div class="product__price">
+                                        38 127 ₽
+                                    </div>
+                                </div>
+                                <div class="product__bottom">
+                                    <div class="selectwrap">
+                                        <div class="selectwrap__title">Параметры</div>
+                                        <select class="selectwrap__input selectbox">
+                                            <option>80x80x195</option>
+                                            <option>90x90x195</option>
+                                            <option>100x100x195</option>
+                                            <option disabled>110x110x195</option>
+                                            <option disabled>120x120x195</option>
+                                        </select>
+                                    </div>
+                                    <div class="product__buttons">
+                                        <button type="button" class="btn-icon">
+                                            <svg role="img" aria-label="Быстрый просмотр"><use href="assets/images/icons.svg#eye" /></svg>
+                                        </button>
+                                        <button type="button" class="btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__inner">
+                            <a href="" class="product__image">
+                                <img src="assets/images/content/product-1.png" alt="">
+                                <button type="button" class="product__favorite">
+                                    <svg role="img" aria-label="В избранное"><use href="assets/images/icons.svg#favorite" /></svg>
+                                </button>
+                                <div class="product__tags">
+                                    <div class="product__tag new">New</div>
+                                </div>
+                            </a>
+                            <div class="product__description">
+                                <div class="product__title">
+                                    <a href="" class="product__name">Душевой угол RV-36</a>
+                                    <div class="product__price">
+                                        36 074 ₽
+                                    </div>
+                                </div>
+                                <div class="product__bottom">
+                                    <div class="selectwrap">
+                                        <div class="selectwrap__title">Параметры</div>
+                                        <select class="selectwrap__input selectbox">
+                                            <option>80x80x195</option>
+                                            <option>90x90x195</option>
+                                            <option>100x100x195</option>
+                                            <option disabled>110x110x195</option>
+                                            <option disabled>120x120x195</option>
+                                        </select>
+                                    </div>
+                                    <div class="product__buttons">
+                                        <button type="button" class="btn-icon">
+                                            <svg role="img" aria-label="Быстрый просмотр"><use href="assets/images/icons.svg#eye" /></svg>
+                                        </button>
+                                        <button type="button" class="btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__inner">
+                            <a href="" class="product__image">
+                                <img src="assets/images/content/product-1.png" alt="">
+                                <button type="button" class="product__favorite">
+                                    <svg role="img" aria-label="В избранное"><use href="assets/images/icons.svg#favorite" /></svg>
+                                </button>
+                                <div class="product__tags">
+                                    <div class="product__tag new">New</div>
+                                </div>
+                            </a>
+                            <div class="product__description">
+                                <div class="product__title">
+                                    <a href="" class="product__name">Душевая перегородка KR-81GC</a>
+                                    <div class="product__price">
+                                        36 074 ₽
+                                    </div>
+                                </div>
+                                <div class="product__bottom">
+                                    <div class="selectwrap">
+                                        <div class="selectwrap__title">Параметры</div>
+                                        <select class="selectwrap__input selectbox">
+                                            <option>80x80x195</option>
+                                            <option>90x90x195</option>
+                                            <option>100x100x195</option>
+                                            <option disabled>110x110x195</option>
+                                            <option disabled>120x120x195</option>
+                                        </select>
+                                    </div>
+                                    <div class="product__buttons">
+                                        <button type="button" class="btn-icon">
+                                            <svg role="img" aria-label="Быстрый просмотр"><use href="assets/images/icons.svg#eye" /></svg>
+                                        </button>
+                                        <button type="button" class="btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__inner">
+                            <a href="" class="product__image">
+                                <img src="assets/images/content/product-1.png" alt="">
+                                <button type="button" class="product__favorite">
+                                    <svg role="img" aria-label="В избранное"><use href="assets/images/icons.svg#favorite" /></svg>
+                                </button>
+                                <div class="product__tags">
+                                    <div class="product__tag new">New</div>
+                                </div>
+                            </a>
+                            <div class="product__description">
+                                <div class="product__title">
+                                    <a href="" class="product__name">Душевая перегородка KR-81GC</a>
+                                    <div class="product__price">
+                                        62 734 ₽
+                                    </div>
+                                </div>
+                                <div class="product__bottom">
+                                    <div class="selectwrap">
+                                        <div class="selectwrap__title">Параметры</div>
+                                        <select class="selectwrap__input selectbox">
+                                            <option>80x80x195</option>
+                                            <option>90x90x195</option>
+                                            <option>100x100x195</option>
+                                            <option disabled>110x110x195</option>
+                                            <option disabled>120x120x195</option>
+                                        </select>
+                                    </div>
+                                    <div class="product__buttons">
+                                        <button type="button" class="btn-icon">
+                                            <svg role="img" aria-label="Быстрый просмотр"><use href="assets/images/icons.svg#eye" /></svg>
+                                        </button>
+                                        <button type="button" class="btn">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="questions">
+                <div class="questions__wrap">
+                    <div class="questions__description">
+                        <h2>Остались вопросы?</h2>
+                        <p>Мы благодарим Вас за выбор продукции Veconi.</p>
+                        <p>Все интересующие Вас вопросы по гарантийному и постгарантийному обслуживанию продукции можно оформить в этой форме или уточнить по телефону технической поддержки</p>
+                    </div>
+                    <div class="questions__form">
+                        <h3>Куда направить запрос?</h3>
+                        <label class="toggle">
+                            <input type="checkbox" class="toggle__checkbox">
+                            <span class="toggle__button"></span>
+                            <span class="toggle__left">Техподдержка</span>
+                            <span class="toggle__right">Отдел продаж</span>
+                        </label>
+                        <div class="questions__row">
+                            <div class="questions__column">
+                                <label class="inputrow">
+                                    <input type="text" placeholder=" " class="inputbox" value="Иван Иванов">
+                                    <span class="inputrow__label">Ваше имя</span>
+                                </label>
+                                <label class="inputrow">
+                                    <input type="text" placeholder=" " class="inputbox" value="ivanivanov@mail.ru">
+                                    <span class="inputrow__label">Email</span>
+                                </label>
+                                <label class="inputrow">
+                                    <input type="text" placeholder=" " class="inputbox">
+                                    <span class="inputrow__label">Телефон</span>
+                                </label>
+                            </div>
+                            <div class="questions__column">
+                                <label class="inputrow">
+                                    <textarea placeholder=" " class="inputbox"></textarea>
+                                    <span class="inputrow__label">Ваш комментарий (не обязательно)</span>
+                                </label>
+                                <input type="submit" class="btn btn--big" value="Отправить заявку">
+                            </div>
+                        </div>
+                        <div class="questions__row">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkbox__label">Я даю разрешение на обработку своих данных в соответствии с <a href="">политикой конфиденциальности</a></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contacts">
+                <div class="title">
+                    <h2>Адреса</h2>
+                </div>
+                <div class="contacts__wrap">
+                    <div class="contacts__column">
+                        <div class="contact contact--dark">
+                            <div class="contact__title">Фирменный магазин-шоурум «Veconi»</div>
+                            <div class="contact__item">
+                                <svg aria-hidden="true"><use href="assets/images/icons.svg#address" /></svg>
+                                <span><strong>Москва</strong><br>
+                                    Погонный проезд 5, стр. 5</span>
+                            </div>
+                            <div class="contact__item">
+                                <svg aria-hidden="true"><use href="assets/images/icons.svg#phone" /></svg>
+                                <span><a href="tel:+78002014050">+7 (800) 201-40-50</a><br>
+                                    <a href="tel:+74991693309">+7 (499) 169-33-09</a></span>
+                            </div>
+                            <div class="contact__item">
+                                <svg aria-hidden="true"><use href="assets/images/icons.svg#email" /></svg>
+                                <span><a href="mailto:info@veconi.ru">info@veconi.ru</a></span>
+                            </div>
+                            <div class="contact__item">
+                                <svg aria-hidden="true"><use href="assets/images/icons.svg#time" /></svg>
+                                <span>с 9:00 до 18:00 Пн-Пт</span>
+                            </div>
+                        </div>
+                        <div class="contact contact--dark">
+                            <div class="contact__title">Фирменный магазин-шоурум «Veconi» — Санкт-Петербург</div>
+                            <div class="contact__item">
+                                <svg aria-hidden="true"><use href="assets/images/icons.svg#address" /></svg>
+                                <span><strong>Санкт-Петербург</strong><br>
+                                    ул. Железноводская, д. 32</span>
+                            </div>
+                            <div class="contact__item">
+                                <svg aria-hidden="true"><use href="assets/images/icons.svg#phone" /></svg>
+                                <span><a href="tel:+78124253776">+7 (812) 425-37-76</a></span>
+                            </div>
+                            <div class="contact__item">
+                                <svg aria-hidden="true"><use href="assets/images/icons.svg#email" /></svg>
+                                <span><a href="mailto:spb@veconi.ru">spb@veconi.ru</a></span>
+                            </div>
+                            <div class="contact__item">
+                                <svg aria-hidden="true"><use href="assets/images/icons.svg#time" /></svg>
+                                <span>с 10:00 до 19:00 Пн-Пт</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__map">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aefde4bca3a6b544827decf2e8766e3ef2ef52ce5e54d1c4a1e78c95f3fb914d3&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
+                    </div>
+                </div>
+                <div class="contacts__row">
+                    <div class="contact">
+                        <div class="contact__title">Официальный дилер «Veconi» в республике Беларусь</div>
+                        <div class="contact__item">
+                            <svg aria-hidden="true"><use href="assets/images/icons.svg#address" /></svg>
+                            <span><strong>Минск</strong><br>
+                                аг. Щомыслица, 28А, ТЛЦ “Глобус Парк”</span>
+                        </div>
+                        <div class="contact__item">
+                            <svg aria-hidden="true"><use href="assets/images/icons.svg#phone" /></svg>
+                            <span><a href="tel:+375447447943">+375 (44) 744-79-43</a><br>
+                                <a href="tel:+375175178212">+375 (17) 517-82-12</a></span>
+                        </div>
+                        <div class="contact__item">
+                            <svg aria-hidden="true"><use href="assets/images/icons.svg#email" /></svg>
+                            <span><a href="mailto:info@stelavis.by">info@stelavis.by</a></span>
+                        </div>
+                        <div class="contact__item">
+                            <svg aria-hidden="true"><use href="assets/images/icons.svg#time" /></svg>
+                            <span>с 9:00 до 18:00 Пн-Пт</span>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact__title">Официальный дилер «Veconi» на Дальнем Востоке</div>
+                        <div class="contact__item">
+                            <svg aria-hidden="true"><use href="assets/images/icons.svg#address" /></svg>
+                            <span><strong>Владивосток</strong><br>
+                                ул. Завойко, 4 А</span>
+                        </div>
+                        <div class="contact__item">
+                            <svg aria-hidden="true"><use href="assets/images/icons.svg#phone" /></svg>
+                            <span><a href="tel:+74232392488">+7 (423) 239-24-88</a><br>
+                                <a href="tel:+79089917369">+7 (908) 991-73-69</a></span>
+                        </div>
+                        <div class="contact__item">
+                            <svg aria-hidden="true"><use href="assets/images/icons.svg#email" /></svg>
+                            <span><a href="mailto:office@furndv.ru">office@furndv.ru</a></span>
+                        </div>
+                        <div class="contact__item">
+                            <svg aria-hidden="true"><use href="assets/images/icons.svg#time" /></svg>
+                            <span>с 9:00 до 18:00 Пн-Чт<br>
+                                с 9:00 до 17:00 Пт</span>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact__title">Официальное представительство «Veconi» в Краснодаре</div>
+                        <div class="contact__item">
+                            <svg aria-hidden="true"><use href="assets/images/icons.svg#address" /></svg>
+                            <span><strong>Краснодар</strong><br>
+                                ул. Тополиная 7/2</span>
+                        </div>
+                        <div class="contact__item">
+                            <svg aria-hidden="true"><use href="assets/images/icons.svg#phone" /></svg>
+                            <span><a href="tel:+79180915551">+7 (918) 091-555-1</a></span>
+                        </div>
+                        <div class="contact__item">
+                            <svg aria-hidden="true"><use href="assets/images/icons.svg#email" /></svg>
+                            <span><a href="mailto:krasnodar@veconi.ru">krasnodar@veconi.ru</a></span>
+                        </div>
+                        <div class="contact__item">
+                            <svg aria-hidden="true"><use href="assets/images/icons.svg#time" /></svg>
+                            <span>с 9:00 до 18:00 Пн-Пт</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-top">
+                <div class="footer-info">
+                    <div class="logo"><img src="assets/images/logo.png" alt="Логотип veconi."></div>
+                    <div class="contact">
+                        <div class="contact__item">
+                            <svg aria-hidden="true"><use href="assets/images/icons.svg#phone" /></svg>
+                            <span><a href="tel:+78002014050">+7 (800) 201-40-50</a></span>
+                        </div>
+                        <div class="contact__item">
+                            <svg aria-hidden="true"><use href="assets/images/icons.svg#email" /></svg>
+                            <span><a href="mailto:info@veconi.ru">info@veconi.ru</a></span>
+                        </div>
+                        <div class="contact__item">
+                            <svg aria-hidden="true"><use href="assets/images/icons.svg#address-empty" /></svg>
+                            <span>107564, г. Москва, Погонный проезд, дом 5, корпус 5.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav__column">
+                        <div class="footer-nav__title"><a href="">Новости</a></div>
+                    </div>
+                    <div class="footer-nav__column">
+                        <div class="footer-nav__title">Компания</div>
+                        <ul class="footer-menu">
+                            <li class="footer-menu__item"><a href="">Вакансии</a></li>
+                            <li class="footer-menu__item"><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav__column">
+                        <div class="footer-nav__title">Информация</div>
+                        <ul class="footer-menu columns">
+                            <li class="footer-menu__item"><a href="">Доставка</a></li>
+                            <li class="footer-menu__item"><a href="">Оплата</a></li>
+                            <li class="footer-menu__item"><a href="">Гарантия</a></li>
+                            <li class="footer-menu__item"><a href="">Возврат и обмен</a></li>
+                            <li class="footer-menu__item"><a href="">Где купить</a></li>
+                            <li class="footer-menu__item"><a href="">Пользовательское<br>
+                                    соглашение</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav__column">
+                        <div class="footer-nav__title">Мы принимаем к оплате</div>
+                        <img src="assets/images/payments.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">Ⓒ 2023 г., ООО «ВЕКОНИ» Все права защищены.</div>
+                <div class="copyright">Официальный сайт торговой марки "Veconi"</div>
+            </div>
+        </footer>
+
+        <div class="panel">
+            <div class="panel__item active">
+                <svg aria-hidden="true" class="panel__icon"><use href="assets/images/icons.svg#main" /></svg>
+                <div class="panel__title">Главная</div>
+            </div>
+            <div class="panel__item">
+                <svg aria-hidden="true" class="panel__icon"><use href="assets/images/icons.svg#menu" /></svg>
+                <div class="panel__title">Меню</div>
+            </div>
+            <div class="panel__item">
+                <svg aria-hidden="true" class="panel__icon"><use href="assets/images/icons.svg#search" /></svg>
+                <div class="panel__title">Поиск</div>
+            </div>
+            <div class="panel__item">
+                <svg aria-hidden="true" class="panel__icon"><use href="assets/images/icons.svg#favorite" /></svg>
+                <div class="panel__title">Избранное</div>
+            </div>
+            <div class="panel__item">
+                <svg aria-hidden="true" class="panel__icon"><use href="assets/images/icons.svg#cart" /></svg>
+                <div class="panel__title">Корзина</div>
+                <div class="panel__value">1</div>
+            </div>
+        </div>
+
+        <div class="modal" id="product-view">
+            <div class="modal__content">
+                <button type="button" class="modal__close">
+                    <svg aria-hidden="true"><use href="assets/images/icons.svg#close" /></svg>
+                    <span>Закрыть</span>
+                </button>
+                <div class="modal-product">
+                    <div class="modal-product__image">
+                        <img src="assets/images/content/product-2.png" alt="">
+                    </div>
+                    <div class="modal-product__description">
+                        <div class="modal-product__title">Душевой угол RV-03</div>
+                        <div class="modal-product__article">RV03-10080A-01-19C1</div>
+                        <div class="modal-product__status pre">Доступно для предзаказа</div><!-- none / avail -->
+                        <div class="modal-product__select">
+                            <div class="modal-product__select-title">Размер, см</div>
+                            <select class="selectwrap__input selectbox">
+                                <option selected>80x80x195</option>
+                                <option>90x90x195</option>
+                                <option>100x100x195</option>
+                                <option disabled>110x110x195</option>
+                                <option disabled>120x120x195</option>
+                            </select>
+                        </div>
+                        <div class="modal-product__price">
+                            35 101 ₽
+                            <span class="price-old">30 379 ₽</span>
+                        </div>
+                        <div class="modal-product__button">
+                            <a href="" class="btn">В корзину</a>
+                        </div>
+                        <div class="item__buttons">
+                            <button type="button" class="item__button">
+                                <svg aria-hidden="true"><use href="assets/images/icons.svg#favorite" /></svg>
+                                <span>Добавить в избранное</span>
+                            </button>
+                            <button type="button" class="item__button">
+                                <svg aria-hidden="true"><use href="assets/images/icons.svg#compare" /></svg>
+                                <span>В сравнение</span>
+                            </button>
+                            <a href="" class="item__button">
+                                <svg aria-hidden="true"><use href="assets/images/icons.svg#review" /></svg>
+                                <span>Отзывы</span>
+                            </a>
+                        </div>
+                        <div class="item__tags">
+                            <div class="item__tag accent">Душевые углы</div>
+                            <div class="item__tag">Асимметричные</div>
+                            <div class="item__tag">Раздвижные</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/selectize.min.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
