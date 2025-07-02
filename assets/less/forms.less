@@ -63,8 +63,37 @@
     }
 }
 
+.btn--remove {
+    .display-inline-flex();
+    background-color: transparent;
+    color: @dark;
+    padding: 0;
+
+    svg {
+        .flex(0,0,auto);
+        fill: currentColor;
+        width: 16px;
+        height: 18px;
+    }
+
+    span {
+        display: none;
+        margin-left: 10px;
+    }
+
+    &:hover {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    &:active {
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+
 .btn--icon {
-    .display-flex();
+    .display-inline-flex();
     .align-items-center();
     .justify-content-center();
     gap: 10px;
@@ -130,6 +159,8 @@
     .btn {
         width: 100%;
     }
+
+    &.inputrow {margin-top: 0;}
 }
 
 .inputrow__label {
@@ -451,5 +482,71 @@ select.selectwrap__input {
         fill: currentColor;
         width: 16px;
         height: 18px;
+    }
+}
+
+.countbox {
+    border: 1px solid #D3D3D3;
+    border-radius: 3px;
+    .display-inline-flex();
+    .align-items-center();
+    width: 135px;
+
+    .countbox__plus, .countbox__minus {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: @dark;
+        font-size: 0;
+        padding: 0;
+        width: 34px;
+        height: 33px;
+        transition: color 0.3s ease;
+
+        svg {
+            fill: currentColor;
+            width: 15px;
+            height: 15px;
+        }
+
+        &[disabled], &.disabled {
+            background-color: #F4F4F4;
+            color: #D3D3D3;
+            pointer-events: none;
+        }
+    }
+
+    .countbox__minus {
+        border-radius: 3px 0 0 3px;
+        border-right: 1px solid #D3D3D3;
+    }
+
+    .countbox__plus {
+        border-radius: 0 3px 3px 0;
+        border-left: 1px solid #D3D3D3;
+    }
+
+    .countbox__input {
+        flex: 1 1 auto;
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 23px;
+        padding: 5px 4px;
+        text-align: center;
+        width: 100%;
+
+        &:focus {
+            border-color: @dark;
+            outline: none;
+        }
+    }
+
+    .count__text {
+        color: @light;
     }
 }

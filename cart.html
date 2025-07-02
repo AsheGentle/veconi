@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <title>Главная</title>
+        <title>Корзина</title>
         <meta charset="utf-8">
         <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -379,608 +379,160 @@
         </header>
 
         <main>
-            <section class="showcase">
-                <div class="showcase-slider">
-                    <div class="showcase-slider__item">
-                        <div class="showcase-slider__inner">
-                            <picture class="showcase-slider__image">
-                                <source srcset="assets/images/content/showcase-1m.png" type="image/png" media="(max-width: 700px)">
-                                <source srcset="assets/images/content/showcase-1.png" type="image/png">
-                                <img src="assets/images/content/showcase-1.png" alt="">
-                            </picture>
-                            <div class="showcase-slider__description">
-                                <div class="showcase-slider__title">Заголовок</div>
-                                <div class="showcase-slider__text">Это текст-рыба. Текст-рыба просто плавает здесь, чтобы показать расположение текста относительно всего дизайна.</div>
-                                <div class="showcase-slider__button">
-                                    <a href="" class="btn">Название кнопки</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="showcase-slider__item">
-                        <div class="showcase-slider__inner">
-                            <picture class="showcase-slider__image">
-                                <source srcset="assets/images/content/showcase-1m.png" type="image/png" media="(max-width: 500px)">
-                                <source srcset="assets/images/content/showcase-1.png" type="image/png">
-                                <img src="assets/images/content/showcase-1.png" alt="">
-                            </picture>
-                            <div class="showcase-slider__description">
-                                <div class="showcase-slider__title">Заголовок</div>
-                                <div class="showcase-slider__text">Это текст-рыба. Текст-рыба просто плавает здесь, чтобы показать расположение текста относительно всего дизайна.</div>
-                                <div class="showcase-slider__button">
-                                    <a href="" class="btn">Название кнопки</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <section class="breadcrumbs-section">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item"><a href="">Главная</a></li>
+                    <li class="breadcrumbs__item"><span>Корзина</span></li>
+                </ul>
             </section>
 
-            <section class="categories">
-                <div class="categories-list">
-                    <a href="" class="category">
-                        <img src="assets/images/content/cat-1.png" alt="" class="category__image">
-                        <div class="category__name">Душевые<br>
-                            перегородки</div>
-                    </a>
-                    <a href="" class="category">
-                        <img src="assets/images/content/cat-2.png" alt="" class="category__image">
-                        <div class="category__name">Поддоны<br>
-                            для душа</div>
-                    </a>
-                    <a href="" class="category">
-                        <img src="assets/images/content/cat-3.png" alt="" class="category__image">
-                        <div class="category__name">Ванны</div>
-                    </a>
-                    <a href="" class="category">
-                        <img src="assets/images/content/cat-4.png" alt="" class="category__image">
-                        <div class="category__name">Унитазы</div>
-                    </a>
-                    <a href="" class="category">
-                        <img src="assets/images/content/cat-5.png" alt="" class="category__image">
-                        <div class="category__name">Водоотводящие<br>
-                            системы</div>
-                    </a>
-                    <a href="" class="category">
-                        <img src="assets/images/content/cat-6.png" alt="" class="category__image">
-                        <div class="category__name">Инсталляции<br>
-                            и кнопки</div>
-                    </a>
-                    <a href="" class="category category--all">
-                        <div class="category__name">Смотреть <br>все</div>
-                    </a>
-                </div>
-            </section>
-
-            <section class="section-catalog">
+            <section class="section-cart">
                 <div class="title">
-                    <h2>Топ продаж</h2>
-                    <a href="" class="title__link">Смотреть все</a>
+                    <h2>Корзина</h2>
                 </div>
-                <div class="catalog-slider">
-                    <div class="product">
-                        <div class="product__inner">
-                            <a href="" class="product__image">
-                                <img src="assets/images/content/product-1.png" alt="">
-                                <div class="product__label">Выставлен в шоурум</div>
-                                <button type="button" class="product__favorite">
-                                    <svg role="img" aria-label="В избранное"><use href="assets/images/icons.svg#favorite" /></svg>
-                                </button>
-                                <div class="product__tags">
-                                    <div class="product__tag premium">Premuim</div>
-                                    <div class="product__tag new">New</div>
-                                    <div class="product__tag hit">Hit</div>
-                                    <div class="product__tag percent">-5<span class="percent__sign"></span></div>
-                                </div>
-                            </a>
-                            <div class="product__description">
-                                <div class="product__title">
-                                    <a href="" class="product__name">Душевой угол RV-13</a>
-                                    <div class="product__price">
-                                        <span class="price-old">30 379 ₽</span> 17 140 ₽
+                <div class="cart">
+                    <div class="cart-wrap">
+                        <div class="cart-list">
+                            <div class="cart-list__top">
+                                <div class="cart-list__title"></div>
+                                <div class="cart-list__title name">Название товара</div>
+                                <div class="cart-list__title price">Цена за шт.</div>
+                                <div class="cart-list__title count">Кол-во</div>
+                                <div class="cart-list__title"></div>
+                            </div>
+                            <div class="cart-list__item">
+                                <a href="" class="cart-list__image">
+                                    <img src="assets/images/content/product-1.png" alt="">
+                                </a>
+                                <div class="cart-list__description">
+                                    <div class="cart-list__name">Душевой угол RV-03</div>
+                                    <div class="cart-list__article">RV03-10080A-01-19C1</div>
+                                    <div class="cart-list__parameters">
+                                        <strong>Параметры:</strong> 120x80x195
                                     </div>
                                 </div>
-                                <div class="product__bottom">
-                                    <div class="selectwrap">
-                                        <div class="selectwrap__title">Параметры</div>
-                                        <select class="selectwrap__input selectbox">
-                                            <option>80x80x195</option>
-                                            <option>90x90x195</option>
-                                            <option>100x100x195</option>
-                                            <option disabled>110x110x195</option>
-                                            <option disabled>120x120x195</option>
-                                        </select>
-                                    </div>
-                                    <div class="product__buttons">
-                                        <button type="button" class="btn-icon" data-modal="#product-view">
-                                            <svg role="img" aria-label="Быстрый просмотр"><use href="assets/images/icons.svg#eye" /></svg>
+                                <div class="cart-list__price">35 101 ₽</div>
+                                <div class="cart-list__inputs">
+                                    <div class="countbox">
+                                        <button type="button" class="countbox__minus">
+                                            <svg aria-hidden="true"><use href="assets/images/icons.svg#minus"></use></svg>
+                                            Минус
                                         </button>
-                                        <button type="button" class="btn">В корзину</button>
+                                        <input type="text" class="countbox__input" value="1">
+                                        <button type="button" class="countbox__plus">
+                                            <svg aria-hidden="true"><use href="assets/images/icons.svg#plus"></use></svg>
+                                            Плюс
+                                        </button>
                                     </div>
+                                </div>
+                                <div class="cart-list__remove">
+                                    <button type="button" class="btn btn--remove">
+                                        <svg aria-hidden="true"><use href="assets/images/icons.svg#remove"></use></svg>
+                                        <span>Убрать</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="cart-list__item">
+                                <a href="" class="cart-list__image">
+                                    <img src="assets/images/content/product-2.png" alt="">
+                                </a>
+                                <div class="cart-list__description">
+                                    <div class="cart-list__name">Душевой угол RV-03</div>
+                                    <div class="cart-list__article">RV03-10080A-01-19C1</div>
+                                    <div class="cart-list__parameters">
+                                        <strong>Параметры:</strong> 120x80x195
+                                    </div>
+                                </div>
+                                <div class="cart-list__price">35 101 ₽</div>
+                                <div class="cart-list__inputs">
+                                    <div class="countbox">
+                                        <button type="button" class="countbox__minus">
+                                            <svg aria-hidden="true"><use href="assets/images/icons.svg#minus"></use></svg>
+                                            Минус
+                                        </button>
+                                        <input type="text" class="countbox__input" value="1">
+                                        <button type="button" class="countbox__plus">
+                                            <svg aria-hidden="true"><use href="assets/images/icons.svg#plus"></use></svg>
+                                            Плюс
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cart-list__remove">
+                                    <button type="button" class="btn btn--remove">
+                                        <svg aria-hidden="true"><use href="assets/images/icons.svg#remove"></use></svg>
+                                        <span>Убрать</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="cart-list__item">
+                                <a href="" class="cart-list__image">
+                                    <img src="assets/images/content/product-3.png" alt="">
+                                </a>
+                                <div class="cart-list__description">
+                                    <div class="cart-list__name">Душевой угол RV-03</div>
+                                    <div class="cart-list__article">RV03-10080A-01-19C1</div>
+                                    <div class="cart-list__parameters">
+                                        <strong>Параметры:</strong> 120x80x195
+                                    </div>
+                                </div>
+                                <div class="cart-list__price">35 101 ₽</div>
+                                <div class="cart-list__inputs">
+                                    <div class="countbox">
+                                        <button type="button" class="countbox__minus">
+                                            <svg aria-hidden="true"><use href="assets/images/icons.svg#minus"></use></svg>
+                                            Минус
+                                        </button>
+                                        <input type="text" class="countbox__input" value="1">
+                                        <button type="button" class="countbox__plus">
+                                            <svg aria-hidden="true"><use href="assets/images/icons.svg#plus"></use></svg>
+                                            Плюс
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cart-list__remove">
+                                    <button type="button" class="btn btn--remove">
+                                        <svg aria-hidden="true"><use href="assets/images/icons.svg#remove"></use></svg>
+                                        <span>Убрать</span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
+                        <div class="cart-clear">
+                            <button type="button" class="btn btn--border btn--icon">
+                                <svg aria-hidden="true"><use href="assets/images/icons.svg#remove"></use></svg>
+                                <span>Очистить корзину</span>
+                            </button>
+                        </div>
                     </div>
-                    <div class="product">
-                        <div class="product__inner">
-                            <a href="" class="product__image">
-                                <img src="assets/images/content/product-1.png" alt="">
-                                <div class="product__label">Выставлен в шоурум</div>
-                                <button type="button" class="product__favorite">
-                                    <svg role="img" aria-label="В избранное"><use href="assets/images/icons.svg#favorite" /></svg>
-                                </button>
-                                <div class="product__tags">
-                                    <div class="product__tag premium">Premuim</div>
-                                    <div class="product__tag new">New</div>
-                                    <div class="product__tag hit">Hit</div>
-                                    <div class="product__tag percent">-5<span class="percent__sign"></span></div>
-                                </div>
-                            </a>
-                            <div class="product__description">
-                                <div class="product__title">
-                                    <a href="" class="product__name">Душевой угол RV-36</a>
-                                    <div class="product__price">
-                                        <span class="price-old">30 379 ₽</span> 17 140 ₽
-                                    </div>
-                                </div>
-                                <div class="product__bottom">
-                                    <div class="selectwrap">
-                                        <div class="selectwrap__title">Параметры</div>
-                                        <select class="selectwrap__input selectbox">
-                                            <option>80x80x195</option>
-                                            <option>90x90x195</option>
-                                            <option>100x100x195</option>
-                                            <option disabled>110x110x195</option>
-                                            <option disabled>120x120x195</option>
-                                        </select>
-                                    </div>
-                                    <div class="product__buttons">
-                                        <button type="button" class="btn-icon">
-                                            <svg role="img" aria-label="Быстрый просмотр"><use href="assets/images/icons.svg#eye" /></svg>
-                                        </button>
-                                        <button type="button" class="btn">В корзину</button>
-                                    </div>
-                                </div>
+                    <div class="cart-aside">
+                        <div class="cart-prices">
+                            <div class="cart-prices__item">
+                                <div class="cart-prices__name">Товары (3)</div>
+                                <div class="cart-prices__value">105 303 ₽</div>
+                            </div>
+                            <div class="cart-prices__item">
+                                <div class="cart-prices__name">Промокод</div>
+                                <div class="cart-prices__value sale">- 5 265 ₽</div>
+                            </div>
+                            <div class="cart-prices__summ">100 038 ₽</div>
+                            <div class="cart-prices__buttons">
+                                <a href="" class="btn">Перейти к оформлению</a>
+                                <a data-modal="#buy-click" class="btn btn--border">Оформить в 1 клик</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="product">
-                        <div class="product__inner">
-                            <a href="" class="product__image">
-                                <img src="assets/images/content/product-1.png" alt="">
-                                <div class="product__label">Выставлен в шоурум</div>
-                                <button type="button" class="product__favorite">
-                                    <svg role="img" aria-label="В избранное"><use href="assets/images/icons.svg#favorite" /></svg>
-                                </button>
-                                <div class="product__tags">
-                                    <div class="product__tag premium">Premuim</div>
-                                    <div class="product__tag new">New</div>
-                                    <div class="product__tag hit">Hit</div>
-                                    <div class="product__tag percent">-5<span class="percent__sign"></span></div>
-                                </div>
-                            </a>
-                            <div class="product__description">
-                                <div class="product__title">
-                                    <a href="" class="product__name">Душевая дверь VN-70</a>
-                                    <div class="product__price">
-                                        <span class="price-old">30 379 ₽</span> 17 140 ₽
-                                    </div>
-                                </div>
-                                <div class="product__bottom">
-                                    <div class="selectwrap">
-                                        <div class="selectwrap__title">Параметры</div>
-                                        <select class="selectwrap__input selectbox">
-                                            <option>80x80x195</option>
-                                            <option>90x90x195</option>
-                                            <option>100x100x195</option>
-                                            <option disabled>110x110x195</option>
-                                            <option disabled>120x120x195</option>
-                                        </select>
-                                    </div>
-                                    <div class="product__buttons">
-                                        <button type="button" class="btn-icon">
-                                            <svg role="img" aria-label="Быстрый просмотр"><use href="assets/images/icons.svg#eye" /></svg>
-                                        </button>
-                                        <button type="button" class="btn">В корзину</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <div class="product__inner">
-                            <a href="" class="product__image">
-                                <img src="assets/images/content/product-1.png" alt="">
-                                <div class="product__label">Выставлен в шоурум</div>
-                                <button type="button" class="product__favorite">
-                                    <svg role="img" aria-label="В избранное"><use href="assets/images/icons.svg#favorite" /></svg>
-                                </button>
-                                <div class="product__tags">
-                                    <div class="product__tag premium">Premuim</div>
-                                    <div class="product__tag new">New</div>
-                                    <div class="product__tag hit">Hit</div>
-                                    <div class="product__tag percent">-5<span class="percent__sign"></span></div>
-                                </div>
-                            </a>
-                            <div class="product__description">
-                                <div class="product__title">
-                                    <a href="" class="product__name">Унитаз подвесной Veconi Pulito Rimless VCN2-49R</a>
-                                    <div class="product__price">
-                                        <span class="price-old">30 379 ₽</span> 17 140 ₽
-                                    </div>
-                                </div>
-                                <div class="product__bottom">
-                                    <div class="product__buttons">
-                                        <button type="button" class="btn-icon">
-                                            <svg role="img" aria-label="Быстрый просмотр"><use href="assets/images/icons.svg#eye" /></svg>
-                                        </button>
-                                        <button type="button" class="btn">В корзину</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="main-about">
-                <div class="main-about__image">
-                    <img src="assets/images/content/about.png" alt="">
-                </div>
-                <div class="main-about__description">
-                    <h2>Veconi</h2>
-                    <div class="main-about__text">
-                        Лаконичный итальянский дизайн, который впишется в любой стиль ванной комнаты. Вся продукция производится на современном итальянском оборудовании, в отделке используется только европейская фурнитура, а основой служат безопасные закаленные стёкла.
-                    </div>
-                    <div class="main-about__subtitle">Мы — лучший выбор</div>
-                    <div class="main-about__list">
-                        <div class="main-about__item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="19" fill="none" viewBox="0 0 23 19"><path fill="#fff" d="M1.688.5C.755.5 0 1.256 0 2.188v11.25c0 .931.756 1.687 1.688 1.687h.562a3.376 3.376 0 0 0 6.75 0h4.5a3.376 3.376 0 0 0 6.75 0h1.125c.622 0 1.125-.503 1.125-1.125s-.503-1.125-1.125-1.125V8.843a2.25 2.25 0 0 0-.657-1.593L18 4.532a2.25 2.25 0 0 0-1.593-.657h-1.782V2.187c0-.931-.756-1.687-1.688-1.687H1.688Zm12.937 5.625h1.782l2.718 2.718V9.5h-4.5V6.125Zm-10.688 9a1.687 1.687 0 1 1 3.375 0 1.687 1.687 0 0 1-3.375 0Zm12.938-1.688a1.687 1.687 0 1 1 0 3.375 1.687 1.687 0 0 1 0-3.375Z"/></svg>
-                            <span>Бесплатная доставка</span>
-                        </div>
-                        <div class="main-about__item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" fill="none" viewBox="0 0 22 23"><path fill="#fff" d="M11 .5c.198 0 .395.043.576.125l8.09 3.433c.946.4 1.65 1.332 1.646 2.458-.021 4.262-1.774 12.061-9.178 15.606a2.625 2.625 0 0 1-2.268 0C2.462 18.577.709 10.778.688 6.516c-.005-1.126.7-2.059 1.645-2.458L10.428.625C10.605.543 10.803.5 11 .5Z"/></svg>
-                            <span>Гарантия на продукцию 2 года</span>
-                        </div>
-                        <div class="main-about__item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="19" fill="none" viewBox="0 0 23 19"><path fill="#fff" d="M16.875 2.188c0-.932-.756-1.688-1.688-1.688h-3.374c-.932 0-1.688.756-1.688 1.688v1.687h-2.25V1.344A.842.842 0 0 0 7.031.5a.842.842 0 0 0-.843.844v2.531h-2.25V1.344A.842.842 0 0 0 3.094.5a.842.842 0 0 0-.844.844v2.531h-.563C.756 3.875 0 4.631 0 5.563V16.811c0 .932.756 1.688 1.688 1.688h19.124c.932 0 1.688-.756 1.688-1.688V8.938c0-.931-.756-1.687-1.688-1.687h-3.937V2.187Zm3.375 11.25v1.124c0 .31-.253.563-.563.563h-1.125a.564.564 0 0 1-.562-.563v-1.124c0-.31.253-.563.563-.563h1.125c.309 0 .562.253.562.563ZM8.437 15.124H7.313a.564.564 0 0 1-.563-.563v-1.124c0-.31.253-.563.563-.563h1.125c.309 0 .562.253.562.563v1.124c0 .31-.253.563-.563.563ZM4.5 14.562c0 .31-.253.563-.563.563H2.813a.564.564 0 0 1-.563-.563v-1.124c0-.31.253-.563.563-.563h1.124c.31 0 .563.253.563.563v1.124ZM19.688 9.5c.309 0 .562.253.562.563v1.124c0 .31-.253.563-.563.563h-1.125a.564.564 0 0 1-.562-.563v-1.124c0-.31.253-.563.563-.563h1.125ZM9 6.687v1.125c0 .31-.253.563-.563.563H7.313a.564.564 0 0 1-.563-.563V6.688c0-.309.253-.562.563-.562h1.125c.309 0 .562.253.562.563Zm-5.063-.562c.31 0 .563.253.563.563v1.125c0 .309-.253.562-.563.562H2.813a.564.564 0 0 1-.563-.563V6.688c0-.309.253-.562.563-.562h1.124ZM9 11.188c0 .309-.253.562-.563.562H7.313a.564.564 0 0 1-.563-.563v-1.124c0-.31.253-.563.563-.563h1.125c.309 0 .562.253.562.563v1.124Zm-5.063.562H2.813a.564.564 0 0 1-.563-.563v-1.124c0-.31.253-.563.563-.563h1.124c.31 0 .563.253.563.563v1.124c0 .31-.253.563-.563.563Zm10.688-1.688v1.126c0 .309-.253.562-.563.562h-1.124a.564.564 0 0 1-.563-.563v-1.124c0-.31.253-.563.563-.563h1.124c.31 0 .563.253.563.563Zm-.563-7.312c.31 0 .563.253.563.563v1.124c0 .31-.253.563-.563.563h-1.124a.564.564 0 0 1-.563-.563V3.313c0-.309.253-.562.563-.562h1.124Zm.563 3.938v1.125c0 .309-.253.562-.563.562h-1.124a.564.564 0 0 1-.563-.563V6.688c0-.309.253-.562.563-.562h1.124c.31 0 .563.253.563.563Z"/></svg>
-                            <span>Самый большой шоурум</span>
-                        </div>
-                        <div class="main-about__item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" fill="none" viewBox="0 0 22 23"><path fill="#fff" d="M3.377.715A1.03 1.03 0 0 0 2.02.8L.3 2.52a1.035 1.035 0 0 0-.09 1.357l3.438 4.47c.193.253.498.403.816.403H6.79l4.684 4.684a3.319 3.319 0 0 0 .614 3.85l4.813 4.812c.537.537 1.409.537 1.946 0l2.75-2.75a1.377 1.377 0 0 0 0-1.946l-4.812-4.813a3.326 3.326 0 0 0-3.85-.614L8.25 7.289V4.964c0-.322-.15-.623-.404-.816L3.377.715ZM.855 17.52a2.918 2.918 0 1 0 4.125 4.125l5.062-5.062a4.714 4.714 0 0 1-.155-2.797l-2.651-2.651-6.38 6.385ZM22 6.688c0-.452-.047-.89-.137-1.311-.104-.481-.692-.606-1.04-.258l-2.746 2.746a.69.69 0 0 1-.486.202l-2.466-.004a.69.69 0 0 1-.688-.688V4.909a.69.69 0 0 1 .203-.486l2.745-2.746c.348-.348.224-.936-.258-1.04A6.319 6.319 0 0 0 15.813.5a6.19 6.19 0 0 0-6.188 6.188v.034l3.665 3.665a4.69 4.69 0 0 1 4.469 1.233l.675.675A6.195 6.195 0 0 0 22 6.688ZM2.406 19.063a1.031 1.031 0 1 1 2.063 0 1.031 1.031 0 0 1-2.063 0Z"/></svg>
-                            <span>Сервисная служба</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-catalog">
-                <div class="title">
-                    <h2>Новинки</h2>
-                    <a href="" class="title__link">Смотреть все</a>
-                </div>
-                <div class="catalog-slider">
-                    <div class="product">
-                        <div class="product__inner">
-                            <a href="" class="product__image">
-                                <img src="assets/images/content/product-1.png" alt="">
-                                <button type="button" class="product__favorite">
-                                    <svg role="img" aria-label="В избранное"><use href="assets/images/icons.svg#favorite" /></svg>
-                                </button>
-                                <div class="product__tags">
-                                    <div class="product__tag new">New</div>
-                                </div>
-                            </a>
-                            <div class="product__description">
-                                <div class="product__title">
-                                    <a href="" class="product__name">Душевой угол RV-13</a>
-                                    <div class="product__price">
-                                        38 127 ₽
-                                    </div>
-                                </div>
-                                <div class="product__bottom">
-                                    <div class="selectwrap">
-                                        <div class="selectwrap__title">Параметры</div>
-                                        <select class="selectwrap__input selectbox">
-                                            <option>80x80x195</option>
-                                            <option>90x90x195</option>
-                                            <option>100x100x195</option>
-                                            <option disabled>110x110x195</option>
-                                            <option disabled>120x120x195</option>
-                                        </select>
-                                    </div>
-                                    <div class="product__buttons">
-                                        <button type="button" class="btn-icon">
-                                            <svg role="img" aria-label="Быстрый просмотр"><use href="assets/images/icons.svg#eye" /></svg>
-                                        </button>
-                                        <button type="button" class="btn">В корзину</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <div class="product__inner">
-                            <a href="" class="product__image">
-                                <img src="assets/images/content/product-1.png" alt="">
-                                <button type="button" class="product__favorite">
-                                    <svg role="img" aria-label="В избранное"><use href="assets/images/icons.svg#favorite" /></svg>
-                                </button>
-                                <div class="product__tags">
-                                    <div class="product__tag new">New</div>
-                                </div>
-                            </a>
-                            <div class="product__description">
-                                <div class="product__title">
-                                    <a href="" class="product__name">Душевой угол RV-36</a>
-                                    <div class="product__price">
-                                        36 074 ₽
-                                    </div>
-                                </div>
-                                <div class="product__bottom">
-                                    <div class="selectwrap">
-                                        <div class="selectwrap__title">Параметры</div>
-                                        <select class="selectwrap__input selectbox">
-                                            <option>80x80x195</option>
-                                            <option>90x90x195</option>
-                                            <option>100x100x195</option>
-                                            <option disabled>110x110x195</option>
-                                            <option disabled>120x120x195</option>
-                                        </select>
-                                    </div>
-                                    <div class="product__buttons">
-                                        <button type="button" class="btn-icon">
-                                            <svg role="img" aria-label="Быстрый просмотр"><use href="assets/images/icons.svg#eye" /></svg>
-                                        </button>
-                                        <button type="button" class="btn">В корзину</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <div class="product__inner">
-                            <a href="" class="product__image">
-                                <img src="assets/images/content/product-1.png" alt="">
-                                <button type="button" class="product__favorite">
-                                    <svg role="img" aria-label="В избранное"><use href="assets/images/icons.svg#favorite" /></svg>
-                                </button>
-                                <div class="product__tags">
-                                    <div class="product__tag new">New</div>
-                                </div>
-                            </a>
-                            <div class="product__description">
-                                <div class="product__title">
-                                    <a href="" class="product__name">Душевая перегородка KR-81GC</a>
-                                    <div class="product__price">
-                                        36 074 ₽
-                                    </div>
-                                </div>
-                                <div class="product__bottom">
-                                    <div class="selectwrap">
-                                        <div class="selectwrap__title">Параметры</div>
-                                        <select class="selectwrap__input selectbox">
-                                            <option>80x80x195</option>
-                                            <option>90x90x195</option>
-                                            <option>100x100x195</option>
-                                            <option disabled>110x110x195</option>
-                                            <option disabled>120x120x195</option>
-                                        </select>
-                                    </div>
-                                    <div class="product__buttons">
-                                        <button type="button" class="btn-icon">
-                                            <svg role="img" aria-label="Быстрый просмотр"><use href="assets/images/icons.svg#eye" /></svg>
-                                        </button>
-                                        <button type="button" class="btn">В корзину</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <div class="product__inner">
-                            <a href="" class="product__image">
-                                <img src="assets/images/content/product-1.png" alt="">
-                                <button type="button" class="product__favorite">
-                                    <svg role="img" aria-label="В избранное"><use href="assets/images/icons.svg#favorite" /></svg>
-                                </button>
-                                <div class="product__tags">
-                                    <div class="product__tag new">New</div>
-                                </div>
-                            </a>
-                            <div class="product__description">
-                                <div class="product__title">
-                                    <a href="" class="product__name">Душевая перегородка KR-81GC</a>
-                                    <div class="product__price">
-                                        62 734 ₽
-                                    </div>
-                                </div>
-                                <div class="product__bottom">
-                                    <div class="selectwrap">
-                                        <div class="selectwrap__title">Параметры</div>
-                                        <select class="selectwrap__input selectbox">
-                                            <option>80x80x195</option>
-                                            <option>90x90x195</option>
-                                            <option>100x100x195</option>
-                                            <option disabled>110x110x195</option>
-                                            <option disabled>120x120x195</option>
-                                        </select>
-                                    </div>
-                                    <div class="product__buttons">
-                                        <button type="button" class="btn-icon">
-                                            <svg role="img" aria-label="Быстрый просмотр"><use href="assets/images/icons.svg#eye" /></svg>
-                                        </button>
-                                        <button type="button" class="btn">В корзину</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="questions">
-                <div class="questions__wrap">
-                    <div class="questions__description">
-                        <h2>Остались вопросы?</h2>
-                        <p>Мы благодарим Вас за выбор продукции Veconi.</p>
-                        <p>Все интересующие Вас вопросы по гарантийному и постгарантийному обслуживанию продукции можно оформить в этой форме или уточнить по телефону технической поддержки</p>
-                    </div>
-                    <div class="questions__form">
-                        <h3>Куда направить запрос?</h3>
-                        <label class="toggle">
-                            <input type="checkbox" class="toggle__checkbox">
-                            <span class="toggle__button"></span>
-                            <span class="toggle__left">Техподдержка</span>
-                            <span class="toggle__right">Отдел продаж</span>
-                        </label>
-                        <div class="questions__row">
-                            <div class="questions__column">
-                                <label class="inputrow">
-                                    <input type="text" placeholder=" " class="inputbox" value="Иван Иванов">
-                                    <span class="inputrow__label">Ваше имя</span>
-                                </label>
-                                <label class="inputrow">
-                                    <input type="text" placeholder=" " class="inputbox" value="ivanivanov@mail.ru">
-                                    <span class="inputrow__label">Email</span>
-                                </label>
+                        <div class="cart-promo">
+                            <div class="cart-promo__title">Промокод</div>
+                            <div class="cart-promo__input">
                                 <label class="inputrow">
                                     <input type="text" placeholder=" " class="inputbox">
-                                    <span class="inputrow__label">Телефон</span>
+                                    <span class="inputrow__label">Введите промокод</span>
                                 </label>
+                                <!--div class="cart-promo__text error">Промокод не найден</div-->
+                                <!--div class="cart-promo__text success">Промокод активирован</div-->
+                                <!--div class="cart-promo__text">Промокод уже был активирован</div-->
                             </div>
-                            <div class="questions__column">
-                                <label class="inputrow">
-                                    <textarea placeholder=" " class="inputbox"></textarea>
-                                    <span class="inputrow__label">Ваш комментарий (не обязательно)</span>
-                                </label>
-                                <input type="submit" class="btn btn--big" value="Отправить заявку">
-                            </div>
-                        </div>
-                        <div class="questions__row">
-                            <label class="checkbox">
-                                <input type="checkbox">
-                                <span class="checkbox__label">Я даю разрешение на обработку своих данных в соответствии с <a href="">политикой конфиденциальности</a></span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="contacts">
-                <div class="title">
-                    <h2>Адреса</h2>
-                </div>
-                <div class="contacts__wrap">
-                    <div class="contacts__column">
-                        <div class="contact contact--dark">
-                            <div class="contact__title">Фирменный магазин-шоурум «Veconi»</div>
-                            <div class="contact__item">
-                                <svg aria-hidden="true"><use href="assets/images/icons.svg#address" /></svg>
-                                <span><strong>Москва</strong><br>
-                                    Погонный проезд 5, стр. 5</span>
-                            </div>
-                            <div class="contact__item">
-                                <svg aria-hidden="true"><use href="assets/images/icons.svg#phone" /></svg>
-                                <span><a href="tel:+78002014050">+7 (800) 201-40-50</a><br>
-                                    <a href="tel:+74991693309">+7 (499) 169-33-09</a></span>
-                            </div>
-                            <div class="contact__item">
-                                <svg aria-hidden="true"><use href="assets/images/icons.svg#email" /></svg>
-                                <span><a href="mailto:info@veconi.ru">info@veconi.ru</a></span>
-                            </div>
-                            <div class="contact__item">
-                                <svg aria-hidden="true"><use href="assets/images/icons.svg#time" /></svg>
-                                <span>с 9:00 до 18:00 Пн-Пт</span>
-                            </div>
-                        </div>
-                        <div class="contact contact--dark">
-                            <div class="contact__title">Фирменный магазин-шоурум «Veconi» — Санкт-Петербург</div>
-                            <div class="contact__item">
-                                <svg aria-hidden="true"><use href="assets/images/icons.svg#address" /></svg>
-                                <span><strong>Санкт-Петербург</strong><br>
-                                    ул. Железноводская, д. 32</span>
-                            </div>
-                            <div class="contact__item">
-                                <svg aria-hidden="true"><use href="assets/images/icons.svg#phone" /></svg>
-                                <span><a href="tel:+78124253776">+7 (812) 425-37-76</a></span>
-                            </div>
-                            <div class="contact__item">
-                                <svg aria-hidden="true"><use href="assets/images/icons.svg#email" /></svg>
-                                <span><a href="mailto:spb@veconi.ru">spb@veconi.ru</a></span>
-                            </div>
-                            <div class="contact__item">
-                                <svg aria-hidden="true"><use href="assets/images/icons.svg#time" /></svg>
-                                <span>с 10:00 до 19:00 Пн-Пт</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contacts__map">
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aefde4bca3a6b544827decf2e8766e3ef2ef52ce5e54d1c4a1e78c95f3fb914d3&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
-                    </div>
-                </div>
-                <div class="contacts__row">
-                    <div class="contact">
-                        <div class="contact__title">Официальный дилер «Veconi» в республике Беларусь</div>
-                        <div class="contact__item">
-                            <svg aria-hidden="true"><use href="assets/images/icons.svg#address" /></svg>
-                            <span><strong>Минск</strong><br>
-                                аг. Щомыслица, 28А, ТЛЦ “Глобус Парк”</span>
-                        </div>
-                        <div class="contact__item">
-                            <svg aria-hidden="true"><use href="assets/images/icons.svg#phone" /></svg>
-                            <span><a href="tel:+375447447943">+375 (44) 744-79-43</a><br>
-                                <a href="tel:+375175178212">+375 (17) 517-82-12</a></span>
-                        </div>
-                        <div class="contact__item">
-                            <svg aria-hidden="true"><use href="assets/images/icons.svg#email" /></svg>
-                            <span><a href="mailto:info@stelavis.by">info@stelavis.by</a></span>
-                        </div>
-                        <div class="contact__item">
-                            <svg aria-hidden="true"><use href="assets/images/icons.svg#time" /></svg>
-                            <span>с 9:00 до 18:00 Пн-Пт</span>
-                        </div>
-                    </div>
-                    <div class="contact">
-                        <div class="contact__title">Официальный дилер «Veconi» на Дальнем Востоке</div>
-                        <div class="contact__item">
-                            <svg aria-hidden="true"><use href="assets/images/icons.svg#address" /></svg>
-                            <span><strong>Владивосток</strong><br>
-                                ул. Завойко, 4 А</span>
-                        </div>
-                        <div class="contact__item">
-                            <svg aria-hidden="true"><use href="assets/images/icons.svg#phone" /></svg>
-                            <span><a href="tel:+74232392488">+7 (423) 239-24-88</a><br>
-                                <a href="tel:+79089917369">+7 (908) 991-73-69</a></span>
-                        </div>
-                        <div class="contact__item">
-                            <svg aria-hidden="true"><use href="assets/images/icons.svg#email" /></svg>
-                            <span><a href="mailto:office@furndv.ru">office@furndv.ru</a></span>
-                        </div>
-                        <div class="contact__item">
-                            <svg aria-hidden="true"><use href="assets/images/icons.svg#time" /></svg>
-                            <span>с 9:00 до 18:00 Пн-Чт<br>
-                                с 9:00 до 17:00 Пт</span>
-                        </div>
-                    </div>
-                    <div class="contact">
-                        <div class="contact__title">Официальное представительство «Veconi» в Краснодаре</div>
-                        <div class="contact__item">
-                            <svg aria-hidden="true"><use href="assets/images/icons.svg#address" /></svg>
-                            <span><strong>Краснодар</strong><br>
-                                ул. Тополиная 7/2</span>
-                        </div>
-                        <div class="contact__item">
-                            <svg aria-hidden="true"><use href="assets/images/icons.svg#phone" /></svg>
-                            <span><a href="tel:+79180915551">+7 (918) 091-555-1</a></span>
-                        </div>
-                        <div class="contact__item">
-                            <svg aria-hidden="true"><use href="assets/images/icons.svg#email" /></svg>
-                            <span><a href="mailto:krasnodar@veconi.ru">krasnodar@veconi.ru</a></span>
-                        </div>
-                        <div class="contact__item">
-                            <svg aria-hidden="true"><use href="assets/images/icons.svg#time" /></svg>
-                            <span>с 9:00 до 18:00 Пн-Пт</span>
+                            <!--button type="submit" class="btn">Активировать</button-->
+                            <button type="submit" class="btn btn--border">Удалить промокод</button>
                         </div>
                     </div>
                 </div>
@@ -1065,57 +617,35 @@
             </div>
         </div>
 
-        <div class="modal" id="product-view">
+        <div class="modal modal--small" id="buy-click">
             <div class="modal__content">
                 <button type="button" class="modal__close">
                     <svg aria-hidden="true"><use href="assets/images/icons.svg#close" /></svg>
                     <span>Закрыть</span>
                 </button>
-                <div class="modal-product">
-                    <div class="modal-product__image">
-                        <img src="assets/images/content/product-2.png" alt="">
-                    </div>
-                    <div class="modal-product__description">
-                        <div class="modal-product__title">Душевой угол RV-03</div>
-                        <div class="modal-product__article">RV03-10080A-01-19C1</div>
-                        <div class="modal-product__status pre">Доступно для предзаказа</div><!-- none / avail -->
-                        <div class="modal-product__select">
-                            <div class="modal-product__select-title">Размер, см</div>
-                            <select class="selectwrap__input selectbox">
-                                <option selected>80x80x195</option>
-                                <option>90x90x195</option>
-                                <option>100x100x195</option>
-                                <option disabled>110x110x195</option>
-                                <option disabled>120x120x195</option>
-                            </select>
+                <div class="modal-buy">
+                    <div class="modal-buy__title">Оформить в 1 клик</div>
+                    <div class="modal-buy__text">Пожалуйста, укажите свои данные и мы перезвоним Вам для уточнения деталей заказа.</div>
+                    <form class="modal-buy__form">
+                        <label class="inputrow">
+                            <input type="text" placeholder=" " class="inputbox" value="Иван Иванов">
+                            <span class="inputrow__label">Ваше имя</span>
+                        </label>
+                        <label class="inputrow">
+                            <input type="text" placeholder=" " class="inputbox">
+                            <span class="inputrow__label">Телефон</span>
+                        </label>
+                        <div class="inputrow">капча</div>
+                        <div class="inputrow inputbutton">
+                            <input type="submit" class="btn" value="Отправить заявку">
                         </div>
-                        <div class="modal-product__price">
-                            35 101 ₽
-                            <span class="price-old">30 379 ₽</span>
+                        <div class="inputrow">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkbox__label">Я даю разрешение на обработку своих данных в соответствии с <a href="">политикой конфиденциальности</a></span>
+                            </label>
                         </div>
-                        <div class="modal-product__button">
-                            <a href="" class="btn">В корзину</a>
-                        </div>
-                        <div class="item__buttons">
-                            <button type="button" class="item__button">
-                                <svg aria-hidden="true"><use href="assets/images/icons.svg#favorite" /></svg>
-                                <span>Добавить в избранное</span>
-                            </button>
-                            <button type="button" class="item__button">
-                                <svg aria-hidden="true"><use href="assets/images/icons.svg#compare" /></svg>
-                                <span>В сравнение</span>
-                            </button>
-                            <a href="" class="item__button">
-                                <svg aria-hidden="true"><use href="assets/images/icons.svg#review" /></svg>
-                                <span>Отзывы</span>
-                            </a>
-                        </div>
-                        <div class="item__tags">
-                            <div class="item__tag accent">Душевые углы</div>
-                            <div class="item__tag">Асимметричные</div>
-                            <div class="item__tag">Раздвижные</div>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
