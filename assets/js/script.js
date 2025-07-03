@@ -222,4 +222,45 @@ $(function() {
             }
         });
     }
+
+
+    function initToggle(key, invert = false) {
+        let keys = Array.isArray(key) ? key : [key];
+
+        keys.forEach(k => {
+            let $checkbox = $(`.toggle__checkbox[name="${k}"]`);
+            let $target = $(`[data-toggle="${k}"]`);
+
+            if ($checkbox.length && $target.length) {
+                function updateState() {
+                    let isChecked = $checkbox.is(':checked');
+                    $target.toggle(invert ? !isChecked : isChecked);
+                }
+
+                $checkbox.on('change', updateState);
+                $(updateState);
+            }
+        });
+    }
+    initToggle('ur');
+    initToggle('another-person');
+    initToggle('delivery-lift', true);
+
+
+    $('input[name="delivery"]').change(function() {
+        var value = $(this).val();
+        if (value === 'delivery-address') {
+            $('[data-toggle="delivery-address"]').show();
+            $('[data-toggle="delivery-point"]').hide();
+        } else if (value === 'delivery-point') {
+            $('[data-toggle="delivery-address"]').hide();
+            $('[data-toggle="delivery-point"]').show();
+        }
+    });
+
+    $('input[name="delivery"]:checked').trigger('change');
+
+
+
+
 });
