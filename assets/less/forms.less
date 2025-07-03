@@ -166,8 +166,11 @@
 .inputrow__label {
     background-color: #fff;
     color: fade(@dark, 50%);
+    //cursor: text;
     font-size: 16px;
+    font-weight: 400;
     margin-right: 1px;
+    pointer-events: none;
     position: absolute;
     left: 20px;
     top: 17px;
@@ -221,10 +224,10 @@
     }
 
     &[disabled], &[readonly] {
-        background-color: #f4f4f4;
+        background-color: @border;
 
         & + .inputrow__label {
-            background-color: #f4f4f4;
+            background-color: @border;
         }
     }
 }
@@ -538,7 +541,7 @@ select.selectwrap__input {
         }
 
         &[disabled], &.disabled {
-            background-color: #F4F4F4;
+            background-color: @border;
             color: #D3D3D3;
             pointer-events: none;
         }

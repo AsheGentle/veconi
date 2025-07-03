@@ -49,7 +49,7 @@
     .submenu {height: auto; opacity: 1; padding: 30px 0; pointer-events: auto; position: static; width: 100%;}
     .submenu__list {padding: 0; width: 100%;}
     .submenu__container::after {display: none;}
-    .submenu__item {background-color: #F4F4F4; border-radius: 5px; padding-right: 98px; width: 100%;}
+    .submenu__item {background-color: @border; border-radius: 5px; padding-right: 98px; width: 100%;}
     .submenu__item.has-child {position: relative;}
     .submenu__item.has-child .submenu__link::after {display: none;}
     .submenu__item.has-child:not(:last-child) {margin-bottom: 10px;}
@@ -65,7 +65,7 @@
     .childmenu__all {display: block;}
 
     .menu__items {display: none; padding: 30px 0; width: 100%;}
-    .menu__items .menu__item {background-color: #F4F4F4; border-radius: 5px; font-size: 18px;}
+    .menu__items .menu__item {background-color: @border; border-radius: 5px; font-size: 18px;}
     .menu__items .menu__item:not(:last-child) {margin-bottom: 10px;}
     .menu__items .menu__link {display: block; padding: 15px;}
     .open-menu .menu__items {display: block;}
@@ -106,7 +106,7 @@
     .filter {background-color: #fff; border-radius: 0; display: none;}
     .filter.open {display: block; position: fixed; top: 0; bottom: 0; left: 0; right: 0; overflow: auto; width: auto; z-index: 500;}
     .filter__top {display: block;}
-    .filter__item {background-color: #F4F4F4; border-radius: 5px; padding: 15px;}
+    .filter__item {background-color: @border; border-radius: 5px; padding: 15px;}
 
     .catalog-views {display: none;}
     .catalog-sorting {
@@ -230,6 +230,8 @@
     .order-item__element .radiobox:not(:last-child) {margin-bottom: 8px;}
     .order-item__row.wrap .radiobox {width: 100%;}
     .order-item__element.third {width: 100%;}
+
+    .login-wrap {gap: 0;}
 }
 
 @media all and (max-width: 700px) {
@@ -275,30 +277,31 @@
     .catalog-list .product.adv {width: 100%;}
     .product.adv .product__inner {.row-nowrap();}
     .product.adv .product__image {margin-bottom: 0; width: 50%;}
-    .product.adv .product__image::after {background: linear-gradient(90deg, rgba(244, 244, 244, 0) 62.2%, #F4F4F4 98.98%);}
+    .product.adv .product__image::after {background: linear-gradient(90deg, rgba(244, 244, 244, 0) 62.2%, @border 98.98%);}
     .product.adv .product__description {padding: 15px; width: 50%;}
     .product.adv .btn {font-size: 12px; padding: 4px 10px 6px;}
 
     .item__gallery {width: 100%;}
     .item__wrap {width: 100%;}
-    .item__tab {font-size: 16px;}
     .item__characteristics-column .item__characteristics-item {font-size: 14px;}
+
+    .item__tab {font-size: 16px;}
+    .item__tabs {margin-left: -20px; margin-right: -20px;}
+    .item__tabs::before {.flex(0,0,2px); content: ''; width: 2px;}
+    .item__tabs::after {.flex(0,0,2px); content: ''; width: 2px;}
 
     .questions__title {.column(); .align-items-start();}
     .questions__subtitle {margin-top: 10px;}
 
     .modal__content {border-radius: 0; max-height: 100dvh; max-width: 100dvh; height: 100dvh; width: 100dvh;}
+    .modal__body {padding: 20px;}
+    .modal--small .modal__content {width: 100dvh;}
+
     .modal-availability {padding: 20px;}
     .modal-availability__list {max-height: none;}
     .modal-availability__item {.row-wrap();}
     .modal-availability__item-name {width: ~'calc(100% - 34px)';}
     .modal-availability__item-address {padding-left: 34px; width: 100%;}
-
-    .modal-buy {padding: 20px;}
-
-    .item__tabs {margin-left: -20px; margin-right: -20px;}
-    .item__tabs::before {.flex(0,0,2px); content: ''; width: 2px;}
-    .item__tabs::after {.flex(0,0,2px); content: ''; width: 2px;}
 
     .modal-delivery {.display-flex(); .column(); padding: 20px; height: 100%;}
     .modal-delivery__list {.flex(1,1,auto); display: block; max-height: none;}
@@ -306,6 +309,14 @@
     .modal-delivery__item:not(:last-child) {margin-bottom: 20px;}
     .modal-delivery__buttons {.column(); gap: 10px;}
     .modal-delivery__buttons .btn {width: 100%;}
+
+    .login-toggle {.display-flex();}
+    .block {display: none;}
+    .block.active {display: block;}
+    .block.login {border: none; padding: 0; width: 100%; max-width: none;}
+    .block.registration {padding: 0; width: 100%; max-width: none;}
+    .block__registration .inputrow {width: 100%;}
+    .block.registration .block__button {margin-top: 30px;}
 }
 
 @media all and (max-width: 520px) {

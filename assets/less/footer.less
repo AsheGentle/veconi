@@ -1,8 +1,9 @@
 footer {
-    background-color: #F4F4F4;
+    background-color: @border;
     margin-top: 60px;
     padding-left: var(--padding-horizontal);
     padding-right: var(--padding-horizontal);
+    .flex(0,0,auto);
 }
 
 .footer-top {
@@ -74,7 +75,7 @@ footer {
 
 .panel {
     background-color: #fff;
-    border-top: 1px solid #F4F4F4;
+    border-top: 1px solid @border;
     display: none;
     padding: 9px 10px 10px;
     position: fixed;

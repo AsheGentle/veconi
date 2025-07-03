@@ -1,10 +1,22 @@
+html {
+    height: 100dvh;
+}
+
 body {
     -webkit-text-size-adjust: 100%;
     color: @dark;
     font-size: 16px;
     font-weight: 500;
+    height: 100%;
     margin: 0;
     overflow-x: background-clip;
+
+    .display-flex();
+    .column();
+}
+
+main {
+    .flex(1,0,auto);
 }
 
 .open-overflow {

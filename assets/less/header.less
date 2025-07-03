@@ -1,5 +1,6 @@
 header {
-    border-bottom: 1px solid #F4F4F4;
+    border-bottom: 1px solid @border;
+    .flex(0,0,auto);
 }
 
 .header-top {
@@ -261,7 +262,7 @@ header {
 
 .menu-tabs {
     display: none;
-    background-color: #F4F4F4;
+    background-color: @border;
     border-radius: 5px;
     padding: 4px;
 }
@@ -354,7 +355,7 @@ header {
     position: relative;
 
     &::after {
-        background-color: #F4F4F4;
+        background-color: @border;
         content: '';
         width: 1px;
         height: 100%;
@@ -511,7 +512,7 @@ header {
 
 .childmenu__all {
     display: none;
-    background-color: #F4F4F4;
+    background-color: @border;
     border-radius: 5px;
     color: @dark;
     font-size: 18px;

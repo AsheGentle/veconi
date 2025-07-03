@@ -455,13 +455,29 @@ select {
   opacity: 0.5;
   background-color: #fafafa;
 }
+html {
+  height: 100dvh;
+}
 body {
   -webkit-text-size-adjust: 100%;
   color: #222222;
   font-size: 16px;
   font-weight: 500;
+  height: 100%;
   margin: 0;
   overflow-x: background-clip;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 .open-overflow {
   overflow: hidden;
@@ -742,7 +758,9 @@ h3 {
   background-color: #fff;
   color: rgba(34, 34, 34, 0.5);
   font-size: 16px;
+  font-weight: 400;
   margin-right: 1px;
+  pointer-events: none;
   position: absolute;
   left: 20px;
   top: 17px;
@@ -787,11 +805,11 @@ h3 {
 }
 .inputbox[disabled],
 .inputbox[readonly] {
-  background-color: #f4f4f4;
+  background-color: #F4F4F4;
 }
 .inputbox[disabled] + .inputrow__label,
 .inputbox[readonly] + .inputrow__label {
-  background-color: #f4f4f4;
+  background-color: #F4F4F4;
 }
 textarea.inputbox {
   height: 119px;
@@ -1137,6 +1155,9 @@ footer {
   margin-top: 60px;
   padding-left: var(--padding-horizontal);
   padding-right: var(--padding-horizontal);
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 .footer-top {
   display: -webkit-box;
@@ -1267,6 +1288,9 @@ footer {
 }
 header {
   border-bottom: 1px solid #F4F4F4;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 .header-top {
   background-color: #222222;
@@ -4681,17 +4705,17 @@ header {
   padding-left: 20px;
   width: 64%;
 }
-.modal-buy {
+.modal__body {
   padding: 56px 30px;
 }
-.modal-buy__title {
+.modal__title {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 6px;
   text-align: center;
   text-transform: uppercase;
 }
-.modal-buy__text {
+.modal__text {
   margin-bottom: 30px;
   text-align: center;
 }
@@ -4808,6 +4832,114 @@ header {
 }
 .modal-point__info-price {
   font-weight: 600;
+}
+.section-login {
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.login-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  gap: 40px;
+}
+.login-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+  display: none;
+  background-color: #F4F4F4;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 4px;
+}
+.login-toggle__item {
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  color: #222222;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 7px;
+  width: 100%;
+}
+.login-toggle__item.active {
+  background-color: #fff;
+}
+.block {
+  padding: 20px;
+}
+.block.login {
+  border: 1px solid #F4F4F4;
+  border-radius: 5px;
+  max-width: 385px;
+  min-width: 290px;
+  padding-bottom: 40px;
+  width: 32%;
+}
+.block.login .checkbox span {
+  color: #222222;
+  font-size: 16px;
+}
+.block.registration {
+  max-width: 540px;
+  padding-right: 0;
+  width: 68%;
+}
+.block.registration .block__button {
+  margin-top: 60px;
+}
+.block__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.block__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.block__row:not(:last-child) {
+  margin-bottom: 10px;
+}
+.block__row .inputrow {
+  margin-bottom: 0;
+  width: 100%;
+}
+.block__registration {
+  -ms-flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row wrap;
+}
+.block__registration .inputrow {
+  width: calc(50% - 5px);
+}
+.block__registration .inputrow:last-child {
+  width: 100%;
+}
+.block__button {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.block__button .btn {
+  width: 100%;
+}
+.block__link {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid;
+  color: #222222;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
 }
 @media all and (max-width: 1300px) {
   .childmenu__content {
@@ -5563,6 +5695,9 @@ header {
   .order-item__element.third {
     width: 100%;
   }
+  .login-wrap {
+    gap: 0;
+  }
 }
 @media all and (max-width: 700px) {
   h1 {
@@ -5706,11 +5841,29 @@ header {
   .item__wrap {
     width: 100%;
   }
+  .item__characteristics-column .item__characteristics-item {
+    font-size: 14px;
+  }
   .item__tab {
     font-size: 16px;
   }
-  .item__characteristics-column .item__characteristics-item {
-    font-size: 14px;
+  .item__tabs {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .item__tabs::before {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 2px;
+    flex: 0 0 2px;
+    content: '';
+    width: 2px;
+  }
+  .item__tabs::after {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 2px;
+    flex: 0 0 2px;
+    content: '';
+    width: 2px;
   }
   .questions__title {
     -webkit-box-orient: vertical;
@@ -5731,6 +5884,12 @@ header {
     height: 100dvh;
     width: 100dvh;
   }
+  .modal__body {
+    padding: 20px;
+  }
+  .modal--small .modal__content {
+    width: 100dvh;
+  }
   .modal-availability {
     padding: 20px;
   }
@@ -5749,27 +5908,6 @@ header {
   .modal-availability__item-address {
     padding-left: 34px;
     width: 100%;
-  }
-  .modal-buy {
-    padding: 20px;
-  }
-  .item__tabs {
-    margin-left: -20px;
-    margin-right: -20px;
-  }
-  .item__tabs::before {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 2px;
-    flex: 0 0 2px;
-    content: '';
-    width: 2px;
-  }
-  .item__tabs::after {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 2px;
-    flex: 0 0 2px;
-    content: '';
-    width: 2px;
   }
   .modal-delivery {
     display: -webkit-box;
@@ -5804,6 +5942,34 @@ header {
   }
   .modal-delivery__buttons .btn {
     width: 100%;
+  }
+  .login-toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .block {
+    display: none;
+  }
+  .block.active {
+    display: block;
+  }
+  .block.login {
+    border: none;
+    padding: 0;
+    width: 100%;
+    max-width: none;
+  }
+  .block.registration {
+    padding: 0;
+    width: 100%;
+    max-width: none;
+  }
+  .block__registration .inputrow {
+    width: 100%;
+  }
+  .block.registration .block__button {
+    margin-top: 30px;
   }
 }
 @media all and (max-width: 520px) {

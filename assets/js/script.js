@@ -261,6 +261,15 @@ $(function() {
     $('input[name="delivery"]:checked').trigger('change');
 
 
+    $('.login-toggle__item').click(function() {
+        $('.login-toggle__item').removeClass('active');
+        $(this).addClass('active');
+
+        let toggleValue = $(this).data('toggle');
+        $('.block').removeClass('active');
+        $('.' + toggleValue).addClass('active');
+    });
+
 
 
 });

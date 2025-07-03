@@ -38,7 +38,7 @@
         margin-bottom: 50px;
 
         .product__inner {
-            background-color: #F4F4F4;
+            background-color: @border;
             border-radius: 5px;
             overflow: hidden;
         }
@@ -47,7 +47,7 @@
             position: relative;
 
             &::after {
-                background: linear-gradient(180deg, rgba(244, 244, 244, 0) 62.2%, #F4F4F4 98.98%);
+                background: linear-gradient(180deg, rgba(244, 244, 244, 0) 62.2%, @border 98.98%);
                 content: '';
                 position: absolute;
                 top: 0;
@@ -530,7 +530,7 @@
             .display-flex();
             .justify-content-between();
             .align-items-end();
-            border-bottom: 1px solid #F4F4F4;
+            border-bottom: 1px solid @border;
             margin-bottom: 10px;
             padding-bottom: 10px;
         }
@@ -594,7 +594,7 @@
 
 .filter {
     .flex(0,0,auto);
-    background-color: #F4F4F4;
+    background-color: @border;
     border-radius: 5px;
     padding: 20px;
     width: 260px;

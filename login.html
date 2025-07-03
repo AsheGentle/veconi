@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <title>Контакты</title>
+        <title>Учётная запись</title>
         <meta charset="utf-8">
         <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -344,13 +344,6 @@
                             <li class="menu__item"><a class="menu__link">Сервис</a></li>
                         </ul>
                     </div>
-
-                    <!--ul class="menu__list">
-                        <li class="menu__item has-submenu">
-
-                        </li>
-
-                    </ul-->
                 </nav>
                 <div class="header-buttons">
                     <div class="search">
@@ -372,6 +365,10 @@
                     </a>
                     <a href="" class="header-buttons__cart">
                         <svg aria-hidden="true"><use href="assets/images/icons.svg#cart" /></svg>
+                        <span class="header-buttons__items">
+                            <span>3 товара</span>
+                            <span>140 404 ₽</span>
+                        </span>
                     </a>
                     <a href="" class="header-buttons__login">
                         <svg aria-hidden="true"><use href="assets/images/icons.svg#login" /></svg>
@@ -385,148 +382,69 @@
             <section class="breadcrumbs-section">
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs__item"><a href="">Главная</a></li>
-                    <li class="breadcrumbs__item"><span>Контакты</span></li>
+                    <li class="breadcrumbs__item"><span>Учётная запись</span></li>
                 </ul>
             </section>
 
-            <section class="questions">
+            <section class="section-login">
                 <div class="title">
-                    <h1>Контакты</h1>
+                    <h2>Учётная запись</h2>
                 </div>
-                <div class="questions__wrap">
-                    <div class="questions__title">
-                        <h2>Обратная связь</h2>
-                        <div class="questions__subtitle">Оставьте заявку и наши операторы свяжутся с вами</div>
+                <div class="login-toggle">
+                    <button type="button" class="login-toggle__item active" data-toggle="login">Вход</button>
+                    <button type="button" class="login-toggle__item" data-toggle="registration">Регистрация</button>
+                </div>
+                <div class="login-wrap">
+                    <div class="block login active">
+                        <div class="block__title">Вход</div>
+                        <div class="block__row">
+                            <label class="inputrow">
+                                <input type="text" placeholder=" " class="inputbox" value="proverka_veconi">
+                                <span class="inputrow__label">Имя пользователя или email</span>
+                            </label>
+                        </div>
+                        <div class="block__row">
+                            <label class="inputrow">
+                                <input type="text" placeholder=" " class="inputbox">
+                                <span class="inputrow__label">Пароль</span>
+                            </label>
+                        </div>
+                        <div class="block__row">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkbox__label">Запомнить меня</span>
+                            </label>
+                        </div>
+                        <div class="block__button">
+                            <a href="" class="btn">Войти</a>
+                        </div>
+                        <button type="button" class="block__link" data-modal="#reset-password">Забыли пароль?</button>
                     </div>
 
-                    <div class="questions__form">
-                        <div class="questions__row">
-                            <div class="questions__column">
-                                <label class="inputrow">
-                                    <input type="text" placeholder=" " class="inputbox" value="Иван Иванов">
-                                    <span class="inputrow__label">Ваше имя</span>
-                                </label>
-                                <label class="inputrow">
-                                    <input type="text" placeholder=" " class="inputbox" value="ivanivanov@mail.ru">
-                                    <span class="inputrow__label">Email</span>
-                                </label>
-                                <label class="inputrow">
-                                    <input type="text" placeholder=" " class="inputbox">
-                                    <span class="inputrow__label">Телефон</span>
-                                </label>
-                            </div>
-                            <div class="questions__column">
-                                <label class="inputrow">
-                                    <textarea placeholder=" " class="inputbox"></textarea>
-                                    <span class="inputrow__label">Ваш комментарий (не обязательно)</span>
-                                </label>
-                            </div>
+                    <div class="block registration">
+                        <div class="block__title">Регистрация</div>
+                        <div class="block__row block__registration">
+                            <label class="inputrow">
+                                <input type="text" placeholder=" " class="inputbox">
+                                <span class="inputrow__label">Имя пользователя</span>
+                            </label>
+                            <label class="inputrow">
+                                <input type="text" placeholder=" " class="inputbox">
+                                <span class="inputrow__label">Email</span>
+                            </label>
+                            <label class="inputrow">
+                                <input type="text" placeholder=" " class="inputbox">
+                                <span class="inputrow__label">Повторить пароль</span>
+                            </label>
                         </div>
-                        <div class="questions__row center">
+                        <div class="block__button">
+                            <a href="" class="btn btn--border">Регистрация</a>
+                        </div>
+                        <div class="block__row">
                             <label class="checkbox">
                                 <input type="checkbox">
                                 <span class="checkbox__label">Я&nbsp;даю разрешение на&nbsp;обработку своих данных в&nbsp;соответствии с&nbsp;<a href="">политикой конфиденциальности</a></span>
                             </label>
-
-                            <input type="submit" class="btn btn--big" value="Отправить заявку">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="contacts">
-                <div class="contacts__wrap">
-                    <div class="contacts__column">
-                        <div class="contact contact--dark">
-                            <div class="contact__title">Офис/Шоу-Рум</div>
-                            <div class="contact__item">
-                                <svg aria-hidden="true"><use href="assets/images/icons.svg#address" /></svg>
-                                <span><strong>Москва</strong><br>
-                                    Погонный проезд 5, стр. 5</span>
-                            </div>
-                            <div class="contact__item">
-                                <svg aria-hidden="true"><use href="assets/images/icons.svg#phone" /></svg>
-                                <span><a href="tel:+78002014050">+7 (800) 201-40-50</a><br>
-                                    <div class="contact__item-block">Розничный отдел:<br>
-                                        <a href="tel:+79035180645">+7 (903) 518-06-45</a><br>
-                                    </div>
-                                    <div class="contact__item-block">Оптовый отдел:<br>
-                                        <a href="tel:+79035230039">+7 (903) 523-00-39</a><br>
-                                        <a href="tel:+79035180645">+7 (903) 518-06-45</a></div></span>
-                            </div>
-                            <div class="contact__item">
-                                <svg aria-hidden="true"><use href="assets/images/icons.svg#email" /></svg>
-                                <span><a href="mailto:info@veconi.ru">info@veconi.ru</a></span>
-                            </div>
-                            <div class="contact__item">
-                                <svg aria-hidden="true"><use href="assets/images/icons.svg#time" /></svg>
-                                <span>с 9:00 до 18:00 Пн-Пт</span>
-                            </div>
-                        </div>
-                        <div class="contact contact--dark">
-                            <div class="contact__title">Склад</div>
-                            <div class="contact__item">
-                                <svg aria-hidden="true"><use href="assets/images/icons.svg#address" /></svg>
-                                <span><strong>Балашиха</strong><br>
-                                    Советская 35</span>
-                            </div>
-                            <div class="contact__item">
-                                <svg aria-hidden="true"><use href="assets/images/icons.svg#time" /></svg>
-                                <span>с 8:00 до 17:00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contacts__map">
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aefde4bca3a6b544827decf2e8766e3ef2ef52ce5e54d1c4a1e78c95f3fb914d3&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
-                    </div>
-                </div>
-            </section>
-
-            <section class="details">
-                <h2>ООО «Векони»</h2>
-                <div class="details__list">
-                    <div class="details__column">
-                        <div class="details__item">
-                            <div class="details__title">Юр. адрес:</div>
-                            <div class="details__value">107564, г. Москва, Погонный проезд, дом 5, корпус 5, 1 этаж, ком.4</div>
-                        </div>
-                        <div class="details__item">
-                            <div class="details__title">Телефон:</div>
-                            <div class="details__value">+7 (499) 169-71-11</div>
-                        </div>
-                        <div class="details__item">
-                            <div class="details__title">ИНН:</div>
-                            <div class="details__value">9718127680</div>
-                        </div>
-                        <div class="details__item">
-                            <div class="details__title">КПП:</div>
-                            <div class="details__value">771801001</div>
-                        </div>
-                        <div class="details__item">
-                            <div class="details__title">ОГРН:</div>
-                            <div class="details__value">1197746083842</div>
-                        </div>
-                    </div>
-                    <div class="details__column">
-                        <div class="details__item">
-                            <div class="details__title">Почтовый адрес:</div>
-                            <div class="details__value">107564, г. Москва, Погонный проезд, дом 5, корпус 5, 1 этаж, ком.4</div>
-                        </div>
-                        <div class="details__item">
-                            <div class="details__title">Банк:</div>
-                            <div class="details__value">ПАО «СБЕРБАНК» г. Москва</div>
-                        </div>
-                        <div class="details__item">
-                            <div class="details__title">Расчетный счет:</div>
-                            <div class="details__value">40702810238000081607</div>
-                        </div>
-                        <div class="details__item">
-                            <div class="details__title">Корреспондентский счет:</div>
-                            <div class="details__value">30101810400000000225</div>
-                        </div>
-                        <div class="details__item">
-                            <div class="details__title">БИК:</div>
-                            <div class="details__value">044525225</div>
                         </div>
                     </div>
                 </div>
@@ -607,6 +525,29 @@
             <div class="panel__item">
                 <svg aria-hidden="true" class="panel__icon"><use href="assets/images/icons.svg#cart" /></svg>
                 <div class="panel__title">Корзина</div>
+                <div class="panel__value">1</div>
+            </div>
+        </div>
+
+        <div class="modal modal--small" id="reset-password">
+            <div class="modal__content">
+                <button type="button" class="modal__close">
+                    <svg aria-hidden="true"><use href="assets/images/icons.svg#close" /></svg>
+                    <span>Закрыть</span>
+                </button>
+                <div class="modal__body">
+                    <div class="modal__title">Восстановление пароля</div>
+                    <div class="modal__text">Забыли свой пароль? Укажите свой email или имя пользователя. Ссылку на создание нового пароля вы получите по электронной почте.</div>
+                    <form class="modal__form">
+                        <label class="inputrow">
+                            <input type="text" placeholder=" " class="inputbox" value="Иван Иванов">
+                            <span class="inputrow__label">Имя пользователя или email</span>
+                        </label>
+                        <div class="inputrow inputbutton">
+                            <input type="submit" class="btn" value="Сбросить пароль">
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
 
