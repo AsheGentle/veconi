@@ -123,6 +123,7 @@ $(function() {
 
 
     $("[data-modal]").on("click", function() {
+        console.log(scrollWidth);
         var modalId = $(this).data("modal");
         $(".modal").removeClass("open");
         $(modalId).addClass("open");
