@@ -162,6 +162,18 @@
     .profile__back {display: block;}
     .profile__title {margin-bottom: 20px; text-align: center;}
     .profile__row {max-width: none;}
+
+    .section-profile--mobile {
+        .title {.display-flex();}
+        .profile__aside {display: block; border: none; padding: 0; width: 100%;}
+        //.profile__menu-title {margin-bottom: 22px;}
+        .profile__menu-item {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='13' fill='none' viewBox='0 0 12 13'%3E%3Cpath fill='%23222' d='M9.53 7.03a.751.751 0 0 0 0-1.062l-4.5-4.5A.751.751 0 0 0 3.967 2.53l3.97 3.97-3.968 3.97a.751.751 0 0 0 1.062 1.062l4.5-4.5-.003-.002Z'/%3E%3C/svg%3E");
+            background-position: right center; background-repeat: no-repeat;}
+        .profile__menu-item:not(:last-child) {border-bottom: 1px solid @border; margin-bottom: 0;}
+        .profile__menu-item a {display: block; padding: 10px 0;}
+        .profile__menu-item.border {background-image: none;}
+        .profile__content {display: none;}
+    }
 }
 
 @media all and (max-width: 900px) {
