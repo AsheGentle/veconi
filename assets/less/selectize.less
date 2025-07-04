@@ -381,3 +381,16 @@
     opacity: @selectize-opacity-disabled;
     background-color: @selectize-color-disabled;
 }
+
+@media all and (max-width: 460px) {
+    .selectize-dropdown .option[data-selectable].pre::after {
+        font-size: 9px;
+        top: auto;
+        bottom: -1px;
+    }
+    .selectize-dropdown .option[data-selectable].none::after {
+        font-size: 9px;
+        top: auto;
+        bottom: -1px;
+    }
+}
