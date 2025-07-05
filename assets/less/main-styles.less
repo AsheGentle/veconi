@@ -738,7 +738,7 @@
         color: @red;
     }
 
-    a {
+    a:not([class]) {
         text-decoration: underline;
     }
 }
@@ -830,5 +830,62 @@
             width: 16px;
             height: 18px;
         }
+    }
+}
+
+.business {
+    padding-left: var(--padding-horizontal);
+    padding-right: var(--padding-horizontal);
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.business__wrap {
+    .display-flex();
+    .align-items-start();
+    gap: 40px;
+}
+
+.business__content {
+    .flex(1,1,auto);
+    width: ~'calc(58% - 40px)';
+
+    .block.login {
+        display: none;
+        border: none;
+        margin-top: 40px;
+        padding: 0;
+        width: 100%;
+        max-width: 385px;
+    }
+
+    .block.registration {
+        display: none;
+        margin-top: 40px;
+        padding: 0;
+        width: 100%;
+        max-width: 385px;
+    }
+}
+
+.business__image {
+    .flex(0,0,auto);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 42%;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.business__buttons {
+    .display-flex();
+    gap: 20px;
+    margin-top: 40px;
+
+    .btn {
+        min-width: 210px;
     }
 }

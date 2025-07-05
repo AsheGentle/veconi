@@ -262,7 +262,7 @@ $(function() {
     $('input[name="delivery"]:checked').trigger('change');
 
 
-    $('.login-toggle__item').click(function() {
+    $('.login-toggle__item').on('click', function() {
         $('.login-toggle__item').removeClass('active');
         $(this).addClass('active');
 
@@ -271,6 +271,21 @@ $(function() {
         $('.' + toggleValue).addClass('active');
     });
 
+
+    $('.btn[data-toggle="login"]').on('click', function() {
+        $('.block.registration').hide();
+        $('.block.login').show();
+        $('.btn[data-toggle="login"]').removeClass('disabled');
+        $('.btn[data-toggle="registration"]').addClass('disabled');
+    });
+
+
+    $('.btn[data-toggle="registration"]').on('click', function() {
+        $('.block.login').hide();
+        $('.block.registration').show();
+        $('.btn[data-toggle="registration"]').removeClass('disabled');
+        $('.btn[data-toggle="login"]').addClass('disabled');
+    });
 
 
 });
