@@ -34,6 +34,24 @@
     }
 }
 
+.btn--icon {
+    .display-inline-flex();
+    .align-items-center();
+    .justify-content-center();
+    gap: 10px;
+
+    svg {
+        .flex(0,0,auto);
+        fill: currentColor;
+        width: 11px;
+        height: 11px;
+    }
+
+    &:hover, &:active {
+        letter-spacing: 0;
+    }
+}
+
 .btn--border {
     background-color: transparent;
     border: 1px solid @dark;
@@ -56,6 +74,16 @@
         &:hover, &:active {
             letter-spacing: 0;
         }
+    }
+}
+
+.btn--noborder {
+    background-color: transparent;
+    color: @dark;
+
+    svg {
+        width: 16px;
+        height: 18px;
     }
 }
 
@@ -105,19 +133,6 @@
     &:active {
         background-color: transparent;
         box-shadow: none;
-    }
-}
-
-.btn--icon {
-    .display-inline-flex();
-    .align-items-center();
-    .justify-content-center();
-    gap: 10px;
-
-    svg {
-        fill: currentColor;
-        width: 11px;
-        height: 11px;
     }
 }
 
@@ -176,7 +191,9 @@
         width: 100%;
     }
 
-    &.inputrow {margin-top: 0;}
+    &.inputrow {
+        margin-top: 0;
+    }
 }
 
 .inputrow__label {
@@ -452,7 +469,9 @@ textarea.inputbox {
 .selectwrap {
     position: relative;
 
-    .selectize-input input {display: none !important;}
+    .selectize-input input {
+        display: none !important;
+    }
 }
 
 .selectwrap__title {

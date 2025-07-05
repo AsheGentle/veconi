@@ -176,6 +176,17 @@
         .profile__menu-item.border {background-image: none;}
         .profile__content {display: none;}
     }
+
+    .modal-compare {padding: 40px 10px;}
+    .modal-compare__toggle {.display-flex();}
+    .modal-compare__top {.row-wrap();}
+    .modal-compare__settings {border: none; display: block; padding: 0 10px 20px; text-align: center; width: 100%;}
+    .modal-compare__box {display: none;}
+    .modal-compare__item {border-bottom: none; padding: 0 10px 10px; width: 33.333333%;}
+    .modal-compare__row {.row-wrap(); padding: 0 10px;}
+    .modal-compare__name {border-right: none; min-height: 0; padding: 10px 0; width: 100%;}
+    .modal-compare__value {padding: 6px 10px; width: 33.333333%;}
+    .modal-compare__image {margin-top: 8px;}
 }
 
 @media all and (max-width: 900px) {
@@ -320,6 +331,8 @@
     .item__tabs::before {.flex(0,0,2px); content: ''; width: 2px;}
     .item__tabs::after {.flex(0,0,2px); content: ''; width: 2px;}
 
+    .item__compare {bottom: 80px; width: 146px;}
+
     .questions__title {.column(); .align-items-start();}
     .questions__subtitle {margin-top: 10px;}
 
@@ -347,6 +360,17 @@
     .modal__order-contact {text-align: center;}
     .modal__order-list {max-height: none; .flex-order(2);}
     .modal__order-summ {border-top: none; border-bottom: 1px solid @border; font-size: 18px; margin-top: 0; margin-bottom: 20px; padding-top: 0; padding-bottom: 10px;}
+
+    .modal-compare {padding: 20px 10px;}
+    .modal-compare__nav {.display-flex();}
+    .modal-compare__item {padding-bottom: 16px; width: 50%;}
+    .modal-compare__item:not(:last-child) {border-right: none;}
+    .modal-compare__item:nth-child(2) {border-right: 1px solid @border;}
+    .modal-compare__item:nth-child(n+4) {display: none;}
+    .modal-compare__value {width: 50%;}
+    .modal-compare__value:not(:last-child) {border-right: none;}
+    .modal-compare__value:nth-child(2) {border-right: 1px solid @border;}
+    .modal-compare__value:nth-child(n+4) {display: none;}
 
     .login-toggle {.display-flex();}
     .block {display: none;}
@@ -420,6 +444,8 @@
     .business__buttons .btn {width: 100%;}
     .business__content .block.login {max-width: none;}
     .business__content .block.registration {max-width: none;}
+
+    .modal-compare__settings .btn {width: 100%;}
 }
 
 @media all and (max-width: 460px) {

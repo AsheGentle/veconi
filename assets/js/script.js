@@ -128,16 +128,33 @@ $(function() {
         $(".modal").removeClass("open");
         $(modalId).addClass("open");
         $("body").addClass("overflow").css("padding-right", scrollWidth);
+        
+        // Скрываем .item__compare при открытии модалки #compare
+        if (modalId === "#compare") {
+            $(".item__compare").hide();
+        }
     });
     $(".modal__close").on("click", function() {
+        var modalId = "#" + $(this).parents(".modal").attr("id");
         $(this).parents(".modal").removeClass("open");
         $("body").removeClass("overflow").css("padding-right", 0);
+        
+        // Показываем .item__compare при закрытии модалки #compare
+        if (modalId === "#compare") {
+            $(".item__compare").show();
+        }
     });
     $(".modal").on("click", function(e) {
         var div = $(this).find(".modal__content");
         if (!div.is(e.target) && div.has(e.target).length === 0) {
+            var modalId = "#" + $(this).attr("id");
             $(this).removeClass("open");
             $("body").removeClass("overflow").css("padding-right", 0);
+            
+            // Показываем .item__compare при закрытии модалки #compare кликом вне контента
+            if (modalId === "#compare") {
+                $(".item__compare").show();
+            }
         }
     });
 

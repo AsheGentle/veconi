@@ -415,9 +415,13 @@
                             <svg aria-hidden="true"><use href="assets/images/icons.svg#favorite" /></svg>
                             <span>Добавить в избранное</span>
                         </button>
-                        <button type="button" class="item__button">
+                        <!--button type="button" class="item__button">
                             <svg aria-hidden="true"><use href="assets/images/icons.svg#compare" /></svg>
                             <span>В сравнение</span>
+                        </button-->
+                        <button type="button" class="item__button">
+                            <svg aria-hidden="true"><use href="assets/images/icons.svg#compare-fill" /></svg>
+                            <span>В сравнении</span>
                         </button>
                         <a href="" class="item__button">
                             <svg aria-hidden="true"><use href="assets/images/icons.svg#review" /></svg>
@@ -648,15 +652,28 @@
                     </div>
                     <div class="item__description-content" data-tab="instructions">
                         <a href="" class="item__description-file">
-                           <svg aria-hidden="true"><use href="assets/images/icons.svg#download" /></svg>
-                           <span class="item__description-file-name">Название_файла.формат</span>
+                            <svg aria-hidden="true"><use href="assets/images/icons.svg#download" /></svg>
+                            <span class="item__description-file-name">Название_файла.формат</span>
                         </a>
                     </div>
                     <div class="item__description-content" data-tab="model">
                         <a href="" class="item__description-file">
-                           <svg aria-hidden="true"><use href="assets/images/icons.svg#download" /></svg>
-                           <span class="item__description-file-name">Название_файла.формат</span>
+                            <svg aria-hidden="true"><use href="assets/images/icons.svg#download" /></svg>
+                            <span class="item__description-file-name">Название_файла.формат</span>
                         </a>
+                    </div>
+                </div>
+
+                <div class="item__compare" data-modal="#compare">
+                    <button type="button" class="item__compare-close">
+                        <svg aria-hidden="true"><use href="assets/images/icons.svg#close" /></svg>
+                        <span>Закрыть</span>
+                    </button>
+                    <div class="item__compare-title">Сравнение товаров</div>
+                    <div class="item__compare-items">
+                        <img src="assets/images/content/product-1.png" alt="">
+                        <img src="assets/images/content/product-6.png" alt="">
+                        <img src="assets/images/content/product-5.png" alt="">
                     </div>
                 </div>
             </section>
@@ -1155,8 +1172,283 @@
             </div>
         </div>
 
+        <div class="modal modal--big" id="compare">
+            <div class="modal__content">
+                <button type="button" class="modal__close">
+                    <svg aria-hidden="true"><use href="assets/images/icons.svg#close" /></svg>
+                    <span>Закрыть</span>
+                </button>
+                <div class="modal-compare">
+                    <div class="modal-compare__top">
+                        <div class="modal-compare__settings">
+                            <h3>Сравнение товаров</h3>
+                            <div class="modal-compare__box">
+                                <label class="radiobox">
+                                    <input type="radio" name="char" checked>
+                                    <span class="radiobox__label">Все характеристики</span>
+                                </label>
+                                <label class="radiobox">
+                                    <input type="radio" name="char">
+                                    <span class="radiobox__label">Только различия</span>
+                                </label>
+                            </div>
+                            <button type="button" class="btn btn--border btn--icon">
+                                <svg aria-hidden="true"><use href="assets/images/icons.svg#remove"></use></svg>
+                                <span>Очистить сравнение</span>
+                            </button>
+                        </div>
+                        <div class="modal-compare__item">
+                            <button type="button" class="btn btn--noborder btn--icon">
+                                <svg aria-hidden="true"><use href="assets/images/icons.svg#remove"></use></svg>
+                                <span>Убрать</span>
+                            </button>
+                            <div class="modal-compare__image">
+                                <div class="modal-compare__status pre">Доступно для предзаказа</div>
+                                <img src="assets/images/content/product-1.png" alt="">
+                            </div>
+                            <div class="modal-compare__nav">
+                                <button type="button" class="modal-compare__nav-prev"><svg aria-hidden="true"><use href="assets/images/icons.svg#chevron"></use></svg></button>
+                                <div class="modal-compare__pages">1 из 3</div>
+                                <button type="button" class="modal-compare__nav-next"><svg aria-hidden="true"><use href="assets/images/icons.svg#chevron"></button>
+                            </div>
+                        </div>
+                        <div class="modal-compare__item">
+                            <button type="button" class="btn btn--noborder btn--icon">
+                                <svg aria-hidden="true"><use href="assets/images/icons.svg#remove"></use></svg>
+                                <span>Убрать</span>
+                            </button>
+                            <div class="modal-compare__image">
+                                <div class="modal-compare__status none">Нет в наличии</div>
+                                <img src="assets/images/content/product-6.png" alt="">
+                            </div>
+                            <div class="modal-compare__nav">
+                                <button type="button" class="modal-compare__nav-prev"><svg aria-hidden="true"><use href="assets/images/icons.svg#chevron"></use></svg></button>
+                                <div class="modal-compare__pages">2 из 3</div>
+                                <button type="button" class="modal-compare__nav-next"><svg aria-hidden="true"><use href="assets/images/icons.svg#chevron"></button>
+                            </div>
+                        </div>
+                        <div class="modal-compare__item">
+                            <button type="button" class="btn btn--noborder btn--icon">
+                                <svg aria-hidden="true"><use href="assets/images/icons.svg#remove"></use></svg>
+                                <span>Убрать</span>
+                            </button>
+                            <div class="modal-compare__image">
+                                <div class="modal-compare__status avail">В наличии</div>
+                                <img src="assets/images/content/product-5.png" alt="">
+                            </div>
+                            <div class="modal-compare__nav">
+                                <button type="button" class="modal-compare__nav-prev"><svg aria-hidden="true"><use href="assets/images/icons.svg#chevron"></use></svg></button>
+                                <div class="modal-compare__pages">3 из 3</div>
+                                <button type="button" class="modal-compare__nav-next"><svg aria-hidden="true"><use href="assets/images/icons.svg#chevron"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-compare__toggle">
+                        <label class="toggle">
+                            <input type="checkbox" class="toggle__checkbox" >
+                            <span class="toggle__button"></span>
+                            <span class="toggle__right">Только различия</span>
+                        </label>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Название</div>
+                        <div class="modal-compare__value">Душевой угол RV-03</div>
+                        <div class="modal-compare__value">Душевой угол Evo 200 B</div>
+                        <div class="modal-compare__value">Душевой угол</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Цена</div>
+                        <div class="modal-compare__value">32 646 ₽ – 36 316 ₽</div>
+                        <div class="modal-compare__value">39 365 ₽ – 44 931 ₽</div>
+                        <div class="modal-compare__value">39 365 ₽</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Параметры</div>
+                        <div class="modal-compare__value">
+                            <select class="selectwrap__input compare-selectbox">
+                                <option selected>80x80x195</option>
+                                <option>90x90x195</option>
+                                <option>100x100x195</option>
+                                <option class="none">110x110x195</option>
+                                <option class="pre">120x120x195</option>
+                            </select>
+                        </div>
+                        <div class="modal-compare__value">
+                            <select class="selectwrap__input compare-selectbox">
+                                <option selected>80x80x195</option>
+                                <option>90x90x195</option>
+                                <option>100x100x195</option>
+                                <option class="none">110x110x195</option>
+                                <option class="pre">120x120x195</option>
+                            </select>
+                        </div>
+                        <div class="modal-compare__value">
+                            <select class="selectwrap__input compare-selectbox">
+                                <option selected>80x80x195</option>
+                                <option>90x90x195</option>
+                                <option>100x100x195</option>
+                                <option class="none">110x110x195</option>
+                                <option class="pre">120x120x195</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Вес</div>
+                        <div class="modal-compare__value">50 кг</div>
+                        <div class="modal-compare__value">–</div>
+                        <div class="modal-compare__value">25 кг</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Бренд</div>
+                        <div class="modal-compare__value">Veconi</div>
+                        <div class="modal-compare__value">Veconi</div>
+                        <div class="modal-compare__value">-</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Цвет поддона</div>
+                        <div class="modal-compare__value">–</div>
+                        <div class="modal-compare__value">–</div>
+                        <div class="modal-compare__value">–</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Цвет профиля</div>
+                        <div class="modal-compare__value">Хром</div>
+                        <div class="modal-compare__value">Чёрный матовый</div>
+                        <div class="modal-compare__value">Чёрный</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Диаметр сливного отверстия, мм</div>
+                        <div class="modal-compare__value">–</div>
+                        <div class="modal-compare__value">–</div>
+                        <div class="modal-compare__value">–</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Гарантия</div>
+                        <div class="modal-compare__value">2 года</div>
+                        <div class="modal-compare__value">2 года</div>
+                        <div class="modal-compare__value">2 года</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Тип стекла</div>
+                        <div class="modal-compare__value">Прозрачное</div>
+                        <div class="modal-compare__value">Прозрачное</div>
+                        <div class="modal-compare__value">Прозрачное</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Толщина стекла, мм</div>
+                        <div class="modal-compare__value">6</div>
+                        <div class="modal-compare__value">6</div>
+                        <div class="modal-compare__value">6</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Глубина поддона</div>
+                        <div class="modal-compare__value">–</div>
+                        <div class="modal-compare__value">–</div>
+                        <div class="modal-compare__value">–</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Количество секций двери</div>
+                        <div class="modal-compare__value">2</div>
+                        <div class="modal-compare__value">2</div>
+                        <div class="modal-compare__value">2</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Материал поддона</div>
+                        <div class="modal-compare__value">–</div>
+                        <div class="modal-compare__value">–</div>
+                        <div class="modal-compare__value">–</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Монтаж</div>
+                        <div class="modal-compare__value">На поддон, На пол</div>
+                        <div class="modal-compare__value">На поддон, На пол</div>
+                        <div class="modal-compare__value">На поддон, На пол</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Нагрузка на поддон, кг</div>
+                        <div class="modal-compare__value">–</div>
+                        <div class="modal-compare__value">–</div>
+                        <div class="modal-compare__value">–</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Ориентация</div>
+                        <div class="modal-compare__value">Универсальная установка угла</div>
+                        <div class="modal-compare__value">Универсальная установка угла</div>
+                        <div class="modal-compare__value">Универсальная установка угла</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Поддон</div>
+                        <div class="modal-compare__value">Приобретается отдельно</div>
+                        <div class="modal-compare__value">Приобретается отдельно</div>
+                        <div class="modal-compare__value">Приобретается отдельно</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Материал профиля</div>
+                        <div class="modal-compare__value">Анодированный алюминий</div>
+                        <div class="modal-compare__value">Анодированный алюминий</div>
+                        <div class="modal-compare__value">Анодированный алюминий</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Производство</div>
+                        <div class="modal-compare__value">Италия/Китай</div>
+                        <div class="modal-compare__value">Италия/Китай</div>
+                        <div class="modal-compare__value">Италия/Китай</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Размер перегородки, см</div>
+                        <div class="modal-compare__value">–</div>
+                        <div class="modal-compare__value">–</div>
+                        <div class="modal-compare__value">–</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Размер поддона, см</div>
+                        <div class="modal-compare__value">–</div>
+                        <div class="modal-compare__value">–</div>
+                        <div class="modal-compare__value">–</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Размер шторки, см</div>
+                        <div class="modal-compare__value">–</div>
+                        <div class="modal-compare__value">–</div>
+                        <div class="modal-compare__value">–</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Ролики</div>
+                        <div class="modal-compare__value">Регулируемые двойные ролики</div>
+                        <div class="modal-compare__value">Регулируемые двойные ролики</div>
+                        <div class="modal-compare__value">Регулируемые двойные ролики</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Ручка</div>
+                        <div class="modal-compare__value">ABS пластик</div>
+                        <div class="modal-compare__value">Нержавеющая сталь</div>
+                        <div class="modal-compare__value">Нержавеющая сталь</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Ширина матовой полосы, см</div>
+                        <div class="modal-compare__value">–</div>
+                        <div class="modal-compare__value">–</div>
+                        <div class="modal-compare__value">–</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Сифон</div>
+                        <div class="modal-compare__value">–</div>
+                        <div class="modal-compare__value">–</div>
+                        <div class="modal-compare__value">–</div>
+                    </div>
+                    <div class="modal-compare__row">
+                        <div class="modal-compare__name">Стекло</div>
+                        <div class="modal-compare__value">Закалённое безопасное стекло</div>
+                        <div class="modal-compare__value">Закалённое безопасное с покрытием “Easy Clean”</div>
+                        <div class="modal-compare__value">Закалённое безопасное с покрытием “Easy Clean”</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script src="assets/js/slick.min.js"></script>
         <script src="assets/js/selectize.min.js"></script>
         <script src="assets/js/script.js"></script>
+        <script src="assets/js/compare.js"></script>
     </body>
 </html>
