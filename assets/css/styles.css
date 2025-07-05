@@ -4767,6 +4767,7 @@ header {
   z-index: 100;
 }
 .modal__close svg {
+  pointer-events: none;
   fill: currentColor;
   width: 16px;
   height: 16px;
