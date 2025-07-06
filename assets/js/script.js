@@ -251,17 +251,8 @@ $(function() {
         $("." + toggleValue).addClass("active");
     });
 
+    // Для бизнеса
     $(".btn[data-toggle='login']").on("click", function() {
-        $(".block.registration").hide();
         $(".block.login").show();
-        $(".btn[data-toggle='login']").removeClass("disabled");
-        $(".btn[data-toggle='registration']").addClass("disabled");
-    });
-
-    $(".btn[data-toggle='registration']").on("click", function() {
-        $(".block.login").hide();
-        $(".block.registration").show();
-        $(".btn[data-toggle='registration']").removeClass("disabled");
-        $(".btn[data-toggle='login']").addClass("disabled");
     });
 });

@@ -2777,13 +2777,6 @@ header {
   width: 100%;
   max-width: 385px;
 }
-.business__content .block.registration {
-  display: none;
-  margin-top: 40px;
-  padding: 0;
-  width: 100%;
-  max-width: 385px;
-}
 .business__image {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
