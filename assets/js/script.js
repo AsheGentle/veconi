@@ -255,4 +255,19 @@ $(function() {
     $(".btn[data-toggle='login']").on("click", function() {
         $(".block.login").show();
     });
+
+    // Открытие профиля в мобилке
+    $(".section-profile--main").on("click", ".profile__menu-item.menu-profile", function(e) {
+        if ($(window).width() <= 1040) {
+            e.preventDefault();
+            $(".section-profile--main").addClass("open");
+        }
+    });
+
+    // Возврат в профиль с заголовка лк
+    $(".profile__title").on("click", function() {
+        if ($(window).width() <= 1040) {
+            window.location.href = "profile-user.html"; //сюда вставить ссылку на настоящую страницу
+        }
+    });
 });
