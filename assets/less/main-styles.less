@@ -881,3 +881,42 @@
         min-width: 210px;
     }
 }
+
+.pagination {
+    .display-flex();
+    .justify-content-center();
+    .align-items-center();
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.pagination__item {
+    .display-flex();
+    .align-items-center();
+    .justify-content-center();
+    border: 1px solid #D3D3D3;
+    border-radius: 3px;
+    color: @dark;
+    width: 30px;
+    height: 37px;
+    text-align: center;
+
+    &.active {
+        background-color: @dark;
+        border-color: @dark;
+        color: #fff;
+    }
+
+    a& {
+        color: @dark;
+    }
+
+    span& {
+        border-color: transparent;
+
+        &.active {
+            background-color: transparent;
+            color: @dark;
+        }
+    }
+}

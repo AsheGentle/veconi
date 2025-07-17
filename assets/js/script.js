@@ -2,7 +2,12 @@ $(function() {
     // Инициализация selectize
     if ($(".selectbox").length > 0) {
         $(".selectbox").selectize({
-            hideSelected: false
+            hideSelected: false,
+            render: {
+                item: function (data) {
+                    return "<div  data-value='" + data.value + "' data-sku='" + data.sku +  "' data-price='" + data.price + "' class='item selected_offer'>" + data.value + " </div>";
+                }
+            }
         });
     }
     // Поиск
@@ -17,8 +22,10 @@ $(function() {
 
     // Подменю
     $(".submenu__link").on("click", function(e) {
-        e.preventDefault();
-        $(this).parents(".submenu__item.has-child").addClass("open-submenu");
+        if ($(window).width() <= 1040) {
+            e.preventDefault();
+            $(this).parents(".submenu__item.has-child").addClass("open-submenu");
+        }
     });
 
     $(".childmenu__title").on("click", function() {
