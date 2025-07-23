@@ -1771,23 +1771,25 @@ header {
   transition: opacity 0.3s ease, right 0.3s ease;
 }
 @media all and (min-width: 1041px) {
-  .submenu__item.has-child .submenu__image {
-    opacity: 0;
-  }
   .submenu__item.has-child:hover .childmenu {
     opacity: 1;
     pointer-events: auto;
-  }
-  .submenu__item.has-child:hover .submenu__link {
-    font-weight: 600;
   }
   .submenu__item.has-child:hover .submenu__link::after {
     opacity: 1;
     right: 0;
   }
-  .submenu__item.has-child:hover .submenu__image {
+}
+@media all and (min-width: 1041px) {
+  .submenu__item .submenu__image {
+    opacity: 0;
+  }
+  .submenu__item:hover .submenu__image {
     opacity: 1;
     z-index: 15;
+  }
+  .submenu__item:hover .submenu__link {
+    font-weight: 600;
   }
 }
 .submenu__link {

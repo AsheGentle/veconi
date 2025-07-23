@@ -398,10 +398,6 @@ header {
         }
 
         @media all and (min-width: 1041px) {
-            .submenu__image {
-                opacity: 0;
-            }
-
             &:hover {
                 .childmenu {
                     opacity: 1;
@@ -409,18 +405,28 @@ header {
                 }
 
                 .submenu__link {
-                    font-weight: 600;
-
                     &::after {
                         opacity: 1;
                         right: 0;
                     }
                 }
+            }
+        }
+    }
 
-                .submenu__image {
-                    opacity: 1;
-                    z-index: 15;
-                }
+    @media all and (min-width: 1041px) {
+        .submenu__image {
+            opacity: 0;
+        }
+
+        &:hover {
+            .submenu__image {
+                opacity: 1;
+                z-index: 15;
+            }
+
+            .submenu__link {
+                font-weight: 600;
             }
         }
     }
