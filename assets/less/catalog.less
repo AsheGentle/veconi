@@ -370,6 +370,8 @@
     .row-wrap();
     gap: 10px;
     margin-top: auto;
+    padding-bottom: 50px;
+    position: relative;
 
     .btn-icon {
         .flex(0,0,auto);
@@ -379,12 +381,11 @@
         .flex(1,1,auto);
     }
 
-    .btn:last-child {
-        margin-bottom: 50px;
-    }
-
-    .btn--partn er:last-child {
-        margin-bottom: 0;
+    .btn--partner {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
     }
 }
 
