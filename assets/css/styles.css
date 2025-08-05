@@ -402,9 +402,7 @@ select {
   cursor: default;
 }
 .selectize-dropdown .selected {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='15' fill='none' viewBox='0 0 14 15'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath fill='%231BBD39' d='M13.725 3.088a.939.939 0 0 1 0 1.327l-7.5 7.5a.939.939 0 0 1-1.328 0l-3.75-3.75a.939.939 0 0 1 1.328-1.327l3.087 3.085L12.4 3.088a.939.939 0 0 1 1.327 0h-.002Z'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M.875 0H14v15H.875z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
-  background-position: right 10px center;
-  background-repeat: no-repeat;
+  background-color: #F4F4F4;
 }
 .selectize-dropdown .selected.create {
   color: #495c68;
@@ -2909,8 +2907,8 @@ span.pagination__item.active {
   right: 0;
   z-index: 10;
 }
-.product.adv .product__description {
-  padding: 0 15px 30px;
+.product.adv .product__text {
+  padding: 0 15px;
 }
 .product.adv .btn {
   white-space: nowrap;
@@ -3223,8 +3221,11 @@ span.pagination__item.active {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
-.product__buttons .btn:last-child:nth-child(2) {
+.product__buttons .btn:last-child {
   margin-bottom: 50px;
+}
+.product__buttons .btn--partn er:last-child {
+  margin-bottom: 0;
 }
 .catalog {
   padding-left: var(--padding-horizontal);
@@ -6917,6 +6918,9 @@ span.pagination__item.active {
   .product.adv .product__description {
     padding: 15px;
     width: 50%;
+  }
+  .product.adv .product__text {
+    padding: 0;
   }
   .product.adv .btn {
     font-size: 12px;

@@ -984,10 +984,48 @@
                                                 </select>
                                             </div>
                                             <div class="product__buttons">
-                                                <button type="button" class="btn-icon">
-                                                    <svg role="img" aria-label="Быстрый просмотр"><use href="assets/images/icons.svg#eye" /></svg>
+                                                <button type="button" class="btn-icon" data-fast_view="#product-view">
+                                                    <svg role="img" aria-label="Быстрый просмотр"><use href="/local/templates/veconi/assets/images/icons.svg#eye"></use></svg>
                                                 </button>
-                                                <button type="button" class="btn">В корзину</button>
+                                                <!--button type="button" class="btn item__buy-button in_cart " onclick="add2basketOffer(this)">В корзину</button>
+
+
+
+                                                <!--                            <div class=''>-->
+                                                <span id="bx_3255098535_21336_subscribe" class="btn item__buy-button to_subscribe show bx-catalog-subscribe-button" data-item="21337" style=""><span>Подписаться</span></span>
+                                                <input type="hidden" id="bx_3255098535_21336_subscribe_hidden">
+
+                                                <script>
+                                                    BX.message({
+                                                        CPST_SUBSCRIBE_POPUP_TITLE: 'Подписка на товар',
+                                                        CPST_SUBSCRIBE_BUTTON_NAME: 'Подписаться',
+                                                        CPST_SUBSCRIBE_BUTTON_CLOSE: 'Закрыть',
+                                                        CPST_SUBSCRIBE_MANY_CONTACT_NOTIFY: 'Выберите способ уведомления:',
+                                                        CPST_SUBSCRIBE_LABLE_CONTACT_INPUT: 'Укажите Ваш #CONTACT#: ',
+                                                        CPST_SUBSCRIBE_VALIDATE_UNKNOW_ERROR: 'Ошибка валидации',
+                                                        CPST_SUBSCRIBE_VALIDATE_ERROR_EMPTY_FIELD: 'Не заполнено поле \"#FIELD#\"',
+                                                        CPST_SUBSCRIBE_VALIDATE_ERROR: 'Вы не выбрали способ уведомления',
+                                                        CPST_SUBSCRIBE_CAPTCHA_TITLE: 'Введите слово на картинке',
+                                                        CPST_STATUS_SUCCESS: 'Успешно',
+                                                        CPST_STATUS_ERROR: 'Произошла ошибка',
+                                                        CPST_ENTER_WORD_PICTURE: 'Введите слово на картинке',
+                                                        CPST_TITLE_ALREADY_SUBSCRIBED: 'Уже подписаны',
+                                                        CPST_POPUP_SUBSCRIBED_TITLE: 'Вы подписаны',
+                                                        CPST_POPUP_SUBSCRIBED_TEXT: 'Список товаров на которые вы подписаны можно увидеть по ссылке #URL#'
+                                                    });
+
+                                                    var obbx_2253176769_21337 = new JCCatalogProductSubscribe({'buttonId': 'bx_3255098535_21336_subscribe', 'jsObject': 'obbx_2253176769_21337', 'alreadySubscribed': false, 'listIdAlreadySubscribed': [], 'productId': '21337', 'buttonClass': 'btn item__buy-button to_subscribe show', 'urlListSubscriptions': '/', 'landingId': '0'});
+                                                </script>
+                                                <script>
+                                                    BX.ready(BX.defer(function() {
+                                                        if (!!window.obbx_2253176769_21337)
+                                                        {
+                                                            window.obbx_2253176769_21337.setIdAlreadySubscribed([]);
+                                                        }
+                                                    }));
+                                                </script>
+                                                <!--                            </div>-->
+                                                <!--                            -->
                                             </div>
                                         </div>
                                     </div>
