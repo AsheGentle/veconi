@@ -3955,6 +3955,10 @@ span.pagination__item.active {
   margin-left: 5px;
 }
 .item__characteristics-column .item__characteristics-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
   padding-bottom: 1px;
 }
 .item__characteristics-item {
@@ -5859,6 +5863,156 @@ span.pagination__item.active {
   font-weight: 500;
   margin-right: 4px;
 }
+.shops {
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.shops__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.shops-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.shops-tab {
+  cursor: pointer;
+  color: #222222;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0.5;
+  padding: 5px 10px;
+  position: relative;
+}
+.shops-tab::after {
+  background-color: #F4F4F4;
+  content: '';
+  position: absolute;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.shops-tab.active {
+  opacity: 1;
+}
+.shops-tab.active::after {
+  height: 3px;
+  background-color: #222222;
+}
+.shops-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 420px;
+}
+.shops__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  padding-left: var(--padding-horizontal);
+  max-height: 630px;
+}
+.shops__list {
+  scrollbar-width: thin;
+  scrollbar-color: #929292 transparent;
+  overflow: scroll;
+  max-width: 505px;
+  padding-right: 10px;
+  width: 50%;
+}
+.shop {
+  cursor: pointer;
+  padding: 20px;
+  position: relative;
+}
+.shop:not(:last-child) {
+  margin-bottom: 20px;
+}
+.shop:not(:last-child)::after {
+  border-bottom: 1px solid #E8E8E8;
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+}
+.shop.active {
+  box-shadow: 0 0 0 2px #47BD5D inset;
+}
+.shop--green .shop__title {
+  color: #47BD5D;
+}
+.shop--gold .shop__title {
+  color: #DDB68E;
+}
+.shop__title {
+  color: #8D8D8D;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.shop__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  font-size: 14px;
+  line-height: 1.25;
+}
+.shop__info svg {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  fill: currentColor;
+  width: 17px;
+  height: 17px;
+  margin-right: 6px;
+}
+.shop__info a {
+  color: #222222;
+}
+.shop__info:not(:last-child) {
+  margin-bottom: 14px;
+}
+/*
+                    
+                <div class="">
+                    <div class="">
+                        <div class="" data-tab="1">
+                            <div class="">Главный офис и шоурум «Veconi»</div>
+                            <div class="">
+                                <svg aria-hidden="true"><use href="assets/images/icons.svg#address" /></svg>
+                                <span><strong>Москва</strong><br>
+                                    Погонный проезд 5, стр. 5</span>
+                            </div>
+                            <div class="shop__info">
+                                <svg aria-hidden="true"><use href="assets/images/icons.svg#phone" /></svg>
+                                <span><a href="tel">+7 (800) 201-40-50</a><br>
+                                    <a href="tel">+7 (499) 169-33-09</a></span>
+                            </div>
+                            <div class="shop__info">
+                                <svg aria-hidden="true"><use href="assets/images/icons.svg#email" /></svg>
+                                <span><a href="mailto:">info@veconi.ru</a></span>
+                            </div>
+                            <div class="shop__info">
+                                <svg aria-hidden="true"><use href="assets/images/icons.svg#site" /></svg>
+                                <span><a href="" target="_blank">veconi.ru</a></span>
+                            </div>
+                            <div class="shop__info*/
 @media all and (max-width: 1300px) {
   .childmenu__content {
     gap: 20px;
