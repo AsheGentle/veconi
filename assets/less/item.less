@@ -130,6 +130,10 @@
     .flex(1,1,auto);
     min-width: 0;
     min-height: 0;
+
+    &:not(.slick-initialized) .item__pictures-el:not(:first-of-type) {
+        display: none;
+    }
 }
 
 .item__pictures-el {

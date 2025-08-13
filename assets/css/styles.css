@@ -147,7 +147,8 @@ select {
 }
 .slick-arrow {
   background-color: transparent;
-  border: none;
+  border: 1px solid #fff;
+  border-radius: 3px;
   cursor: pointer;
   font-size: 0;
   height: 40px;
@@ -160,11 +161,11 @@ select {
 }
 .slick-prev {
   background-image: url('../images/arrow-prev.svg');
-  left: -60px;
+  left: 10px;
 }
 .slick-next {
   background-image: url('../images/arrow-next.svg');
-  right: -60px;
+  right: 10px;
 }
 .slick-dots {
   font-size: 0;
@@ -4558,6 +4559,9 @@ span.pagination__item.active {
   flex: 1 1 auto;
   min-width: 0;
   min-height: 0;
+}
+.item__pictures:not(.slick-initialized) .item__pictures-el:not(:first-of-type) {
+  display: none;
 }
 .item__pictures-el {
   aspect-ratio: 1;
