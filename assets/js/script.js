@@ -5,7 +5,7 @@ $(function() {
             hideSelected: false,
             render: {
                 item: function (data) {
-                    return "<div  data-value='" + data.value + "' data-sku='" + data.sku +  "' data-price='" + data.price + "' class='item selected_offer'>" + data.value + " </div>";
+                    return "<div  data-value='" + data.value + "' data-sku='" + data.sku+ "' data-type='" + data.type +  "' data-price='" + data.price +  "' data-partner_price='" + data.partner_price + "' class='item selected_offer'>" + data.value + " </div>";
                 }
             }
         });
@@ -219,10 +219,24 @@ $(function() {
         keys.forEach(k => {
             let $checkbox = $(`.toggle__checkbox[name="${k}"]`);
             let $target = $(`[data-toggle="${k}"]`);
-            if ($checkbox.length && $target.length) {
+            if ($checkbox.length) {
                 function updateState() {
                     let isChecked = $checkbox.is(":checked");
-                    $target.toggle(invert ? !isChecked : isChecked);
+
+                    // Синхронизация с радиокнопками person_type_id
+                    if (k === 'ur') {
+                        const personTypeValue = isChecked ? '2' : '1';
+                        const $radio = $(`input[name="person_type_id"][value="${personTypeValue}"]`);
+
+                        // Изменяем состояние и триггерим событие click
+                        $radio.prop('checked', true)
+                            .trigger('click') // Имитируем клик
+                            .trigger('change'); // На всякий случай триггерим и change
+                    }
+
+                    if ($target.length) {
+                        $target.toggle(invert ? !isChecked : isChecked);
+                    }
                 }
 
                 $checkbox.on("change", updateState);

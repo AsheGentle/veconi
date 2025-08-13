@@ -1,0 +1,251 @@
+.shops {
+    padding-left: var(--padding-horizontal);
+    padding-right: var(--padding-horizontal);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.shops__top {
+    .display-flex();
+    .align-items-end();
+    .justify-content-between();
+}
+
+.shops-tabs {
+    .display-flex();
+    .align-items-end();
+}
+
+.shops-tab {
+    cursor: pointer;
+    color: @dark;
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0.5;
+    padding: 5px 10px;
+    position: relative;
+
+    &::after {
+        background-color: #F4F4F4;
+        content: '';
+        position: absolute;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    &.active {
+        opacity: 1;
+
+        &::after {
+            height: 3px;
+            background-color: @dark;
+        }
+    }
+}
+
+.shops-search {
+    .display-flex();
+    position: relative;
+    width: 420px;
+}
+
+.shops-search__select {
+    .flex(1,1,auto);
+    border-radius: 3px 0 0 3px;
+    margin-bottom: 0 !important;
+}
+
+.shops-search__btn {
+    border-radius: 0 3px 3px 0;
+    width: 75px;
+}
+
+.shops-search__dropdown {
+    opacity: 0;
+    pointer-events: none;
+    background-color: #fff;
+    border: 1px solid #D3D3D3;
+    border-top-color: #fff;
+    max-height: 490px;
+    overflow: auto;
+    padding: 15px 20px;
+    position: absolute;
+    top: ~'calc(100% - 1px)';
+    left: 0;
+    right: 75px;
+    z-index: 10;
+    .scroll-thin();
+
+    &.open {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+.shops-search__dropdown-item {
+    cursor: pointer;
+    padding: 5px 0;
+
+    &:hover {
+        background-color: #F4F4F4;
+    }
+}
+
+.shops__wrap {
+    .display-flex();
+    gap: 30px;
+    padding-left: var(--padding-horizontal);
+    max-height: 636px;
+}
+
+.shops__list {
+    .scroll-thin();
+    overflow: scroll;
+    max-width: 505px;
+    padding-right: 10px;
+    width: 50%;
+}
+
+.shops__list-tags {
+    .display-flex();
+    .row-wrap();
+    gap: 12px;
+}
+
+.shops__list-tag {
+    .display-inline-flex();
+    .align-items-center();
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    svg {
+        .flex(0,0,auto);
+        cursor: pointer;
+        margin-left: 10px;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.shop {
+    cursor: pointer;
+    padding: 20px;
+    position: relative;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+
+        &::after {
+            border-bottom: 1px solid #E8E8E8;
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    &.active {
+        box-shadow: 0 0 0 2px #8D8D8D inset;
+    }
+}
+
+.shop--green {
+    .shop__title {
+        color: #47BD5D;
+    }
+
+    &.active {
+        box-shadow: 0 0 0 2px #47BD5D inset;
+    }
+}
+
+.shop--gold {
+    .shop__title {
+        color: #DDB68E;
+    }
+
+    &.active {
+        box-shadow: 0 0 0 2px #DDB68E inset;
+    }
+}
+
+.shop__title {
+    color: #8D8D8D;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.shop__info {
+    .display-flex();
+    .align-items-start();
+    font-size: 14px;
+    line-height: 1.25;
+
+    svg {
+        .flex(0,0,auto);
+        fill: currentColor;
+        width: 17px;
+        height: 17px;
+        margin-right: 6px;
+    }
+
+    a {
+        color: @dark;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 14px;
+    }
+}
+
+.shop__exhibition {
+    font-size: 14px;
+    text-align: right;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.shop__exhibition-title {
+}
+
+.shop__exhibition-toggle {
+    .display-inline-flex();
+    .align-items-center();
+    opacity: 0.5;
+
+    svg {
+        .flex(0,0,auto);
+        width: 13px;
+        height: 13px;
+        margin-right: 6px;
+    }
+}
+
+.shops__map {
+    .flex(1,1,auto);
+    width: 50%;
+}
+
+.shop__cards {
+    display: none;
+    margin-bottom: 14px;
+
+    &.open {
+        display: block;
+    }
+
+    .product {
+        padding: 0 8px;
+        width: 200px;
+    }
+
+    .product__title {
+        margin-bottom: 0;
+    }
+}
