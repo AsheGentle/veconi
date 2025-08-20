@@ -24,6 +24,10 @@
         overflow: visible;
     }
 
+    .slick-track {
+        min-width: 100%;
+    }
+
     .product {
         padding: 0 15px;
     }
@@ -66,6 +70,10 @@
             white-space: nowrap;
             width: 100%;
         }
+    }
+
+    .selectize-input {
+        padding: 9px 48px 9px 9px;
     }
 }
 
@@ -574,6 +582,7 @@
             .row-nowrap();
             margin-top: 0;
             margin-left: 20px;
+            padding-bottom: 0;
             width: ~'calc(50% - 10px)';
 
             .btn:last-child:nth-child(2) {
@@ -591,8 +600,6 @@
 
         .btn-icon {
             .flex-order(2);
-            width: 52px;
-            height: 52px;
         }
     }
 }
