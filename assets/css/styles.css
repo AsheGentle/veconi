@@ -235,7 +235,12 @@ select {
   border-radius: 3px;
 }
 .selectize-input .item {
+  display: block;
   padding: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
 }
 .selectize-control.multi .selectize-input.has-items {
   padding: -4px 9px -7px;
@@ -3690,6 +3695,9 @@ span.pagination__item.active {
 .product .selectize-input {
   padding: 9px 48px 9px 9px;
 }
+.product .selectize-control.single .selectize-input::after {
+  top: 11px;
+}
 .product__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4005,6 +4013,9 @@ span.pagination__item.active {
   left: 0;
   width: 100%;
 }
+.product__buttons .to_subscribe {
+  max-width: calc(100% - 46px);
+}
 .catalog {
   padding-left: var(--padding-horizontal);
   padding-right: var(--padding-horizontal);
@@ -4198,6 +4209,7 @@ span.pagination__item.active {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   margin-bottom: 0;
+  margin-right: 20px;
   width: calc(50% - 10px);
 }
 .catalog-list.view-list .product__buttons {
@@ -4206,7 +4218,7 @@ span.pagination__item.active {
   -webkit-box-direction: normal;
   flex-flow: row nowrap;
   margin-top: 0;
-  margin-left: 20px;
+  margin-left: auto;
   padding-bottom: 0;
   width: calc(50% - 10px);
 }

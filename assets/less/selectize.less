@@ -127,7 +127,12 @@
     .selectize-border-radius(@selectize-border-radius);
 
     .item {
+        display: block;
         padding: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
     }
 
     .selectize-control.multi &.has-items {

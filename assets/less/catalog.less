@@ -75,6 +75,10 @@
     .selectize-input {
         padding: 9px 48px 9px 9px;
     }
+
+    .selectize-control.single .selectize-input::after {
+        top: 11px;
+    }
 }
 
 .product__inner {
@@ -395,6 +399,10 @@
         left: 0;
         width: 100%;
     }
+
+    .to_subscribe {
+        max-width: ~'calc(100% - 46px)';
+    }
 }
 
 .catalog {
@@ -574,6 +582,7 @@
             .selectwrap {
                 .flex(1,1,auto);
                 margin-bottom: 0;
+                margin-right: 20px;
                 width: ~'calc(50% - 10px)';
             }
         }
@@ -581,7 +590,7 @@
         .product__buttons {
             .row-nowrap();
             margin-top: 0;
-            margin-left: 20px;
+            margin-left: auto;
             padding-bottom: 0;
             width: ~'calc(50% - 10px)';
 
